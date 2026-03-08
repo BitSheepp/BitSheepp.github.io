@@ -10,7 +10,12 @@ function li(items = []) {
 
 function renderSkills(skills = {}) {
   return Object.entries(skills)
-    .map(([k, arr]) => `<div class="skill-group"><b>${k}</b><span>${arr.join(', ')}</span></div>`)
+    .map(([k, arr]) => `
+      <div class="skill-group">
+        <b>${k}</b>
+        <div>${arr.map((s) => `<span class="skill-chip">${s}</span>`).join('')}</div>
+      </div>
+    `)
     .join('');
 }
 
@@ -40,6 +45,22 @@ function renderExperience(list = []) {
     .join('');
 }
 
+function setupReveal() {
+  const items = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        io.unobserve(entry.target);
+      }
+    }
+  }, { threshold: 0.12 });
+  items.forEach((el, idx) => {
+    el.style.transitionDelay = `${idx * 60}ms`;
+    io.observe(el);
+  });
+}
+
 loadData()
   .then((d) => {
     document.getElementById('name').textContent = d.name;
@@ -57,6 +78,7 @@ loadData()
     document.getElementById('skills').innerHTML = renderSkills(d.skills);
     document.getElementById('languages').innerHTML = li(d.languages);
     document.getElementById('interests').innerHTML = li(d.interests);
+    setupReveal();
   })
   .catch((err) => {
     document.body.innerHTML = `<main class="container"><section class="card"><h2>Load Error</h2><p>${err.message}</p></section></main>`;
