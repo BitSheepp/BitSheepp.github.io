@@ -1,4 +1,4 @@
-const I18N = {
+﻿const I18N = {
   en: {
     portfolio: 'Research Portfolio',
     quick_summary: 'Quick Summary',
@@ -19,7 +19,9 @@ const I18N = {
     pending: 'pending',
     if_label: 'Impact Factor',
     status_published: 'Published',
-    status_unpublished: 'Unpublished'
+    status_unpublished: 'Unpublished',
+    authors: 'Authors',
+    et_al: 'et al.'
   },
   zh: {
     portfolio: '个人学术主页',
@@ -41,7 +43,9 @@ const I18N = {
     pending: '待补充',
     if_label: '影响因子',
     status_published: '已发表',
-    status_unpublished: '未发表'
+    status_unpublished: '未发表',
+    authors: '作者',
+    et_al: '等'
   }
 };
 
