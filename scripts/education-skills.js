@@ -16,6 +16,7 @@ function pickLangField(field, lang) {
 function render() {
   if (!profileData) return;
   const lang = getLang();
+  const isZh = lang === 'zh';
   const d = profileData;
 
   document.getElementById('education-list').innerHTML = (d.education || []).map((e) => {
@@ -29,9 +30,13 @@ function render() {
     `;
   }).join('');
 
-  document.getElementById('awards-list').innerHTML = (d.awards || []).map((a) => `<li>${a}</li>`).join('');
-  document.getElementById('languages-list').innerHTML = (d.languages || []).map((l) => `<li>${l}</li>`).join('');
-  document.getElementById('interests-list').innerHTML = (d.interests || []).map((i) => `<li>${i}</li>`).join('');
+  const awards = isZh ? (d.awards_zh || d.awards || []) : (d.awards || []);
+  const langs = isZh ? (d.languages_zh || d.languages || []) : (d.languages || []);
+  const interests = isZh ? (d.interests_zh || d.interests || []) : (d.interests || []);
+
+  document.getElementById('awards-list').innerHTML = awards.map((a) => `<li>${a}</li>`).join('');
+  document.getElementById('languages-list').innerHTML = langs.map((l) => `<li>${l}</li>`).join('');
+  document.getElementById('interests-list').innerHTML = interests.map((i) => `<li>${i}</li>`).join('');
 
   document.getElementById('skills-list').innerHTML = Object.entries(d.skills || {}).map(([k, arr]) => `
     <article class="entry">

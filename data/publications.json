@@ -1,50 +1,54 @@
 [
   {
     "id": "P.2",
-    "title": "Molecular mechanisms of high levels of L-ascorbic acid accumulation in chestnut rose fruits",
-    "publication": "Plant Communications",
+    "title_en": "Molecular mechanisms of high levels of L-ascorbic acid accumulation in chestnut rose fruits",
+    "title_zh": "刺梨果实高水平 L-抗坏血酸积累的分子机制",
+    "publication_en": "Plant Communications",
+    "publication_zh": "Plant Communications",
     "year": "2025",
     "status": "Published",
-    "impact_factor": 9.4,
-    "doi_url": "",
-    "pdf_url": "",
-    "authors": "Li, Yawei; Liu, Ziang; Liao, Guanglian; Huang, Yue; Liu, Shengjun; Liu, Xukai; Wang, Shuting; Liu, Bing; He, Chunyang; Yang, Kun;",
-    "publisher": "Elsevier"
+    "impact_factor": 10.26,
+    "doi": "10.1016/j.xplc.2025.101419",
+    "doi_url": "https://doi.org/10.1016/j.xplc.2025.101419",
+    "authors": "Li, Yawei; Liu, Ziang; Liao, Guanglian; Huang, Yue; Liu, Shengjun; Liu, Xukai; Wang, Shuting; Liu, Bing; He, Chunyang; Yang, Kun;"
   },
   {
     "id": "P.1",
-    "title": "Identification of a COMT Gene Involved in the Biosynthesis of Melatonin Which Mediates Resistance to Citrus Canker",
-    "publication": "Journal of pineal research",
+    "title_en": "Identification of a COMT Gene Involved in the Biosynthesis of Melatonin Which Mediates Resistance to Citrus Canker",
+    "title_zh": "参与褪黑素生物合成并介导柑橘溃疡病抗性的 COMT 基因鉴定",
+    "publication_en": "Journal of pineal research",
+    "publication_zh": "Journal of Pineal Research",
     "year": "2025",
     "status": "Published",
-    "impact_factor": 7.4,
-    "doi_url": "",
-    "pdf_url": "",
-    "authors": "Yang, Kun; Xu, Wenqing; Cai, Huanyu; Tang, Xiaomei; An, Xiaoyan; He, Chunyang; Teng, Huailong; Xu, Qiang; Xu, Yuantao;",
-    "publisher": ""
+    "impact_factor": 7.24,
+    "doi": "10.1111/jpi.70043",
+    "doi_url": "https://doi.org/10.1111/jpi.70043",
+    "authors": "Yang, Kun; Xu, Wenqing; Cai, Huanyu; Tang, Xiaomei; An, Xiaoyan; He, Chunyang; Teng, Huailong; Xu, Qiang; Xu, Yuantao;"
   },
   {
     "id": "P.3",
-    "title": "RroxbHLH91 positively regulates multiple genes involved in the accumulation of L-ascorbic acid",
-    "publication": "Horticultural Plant Journal",
+    "title_en": "RroxbHLH91 positively regulates multiple genes involved in the accumulation of L-ascorbic acid",
+    "title_zh": "RroxbHLH91 正向调控多基因促进 L-抗坏血酸积累",
+    "publication_en": "Horticultural Plant Journal",
+    "publication_zh": "Horticultural Plant Journal",
     "year": "2025",
     "status": "Published",
-    "impact_factor": 5.7,
-    "doi_url": "",
-    "pdf_url": "",
-    "authors": "Li, Yawei; Liu, Ziang; Liu, Shengjun; Liu, Xukai; He, Chunyang; Xu, Qiang; Liao, Guanglian; Wang, Xia;",
-    "publisher": "Elsevier"
+    "impact_factor": 7.04,
+    "doi": "10.1016/j.hpj.2025.07.015",
+    "doi_url": "https://doi.org/10.1016/j.hpj.2025.07.015",
+    "authors": "Li, Yawei; Liu, Ziang; Liu, Shengjun; Liu, Xukai; He, Chunyang; Xu, Qiang; Liao, Guanglian; Wang, Xia;"
   },
   {
     "id": "P.4",
-    "title": "PhenoCitrus: An automated platform to phenotyping morphological traits of citrus fruit",
-    "publication": "Scientia Horticulturae",
+    "title_en": "PhenoCitrus: An automated platform to phenotyping morphological traits of citrus fruit",
+    "title_zh": "PhenoCitrus：用于柑橘果实形态性状自动表型分析的平台",
+    "publication_en": "Scientia Horticulturae",
+    "publication_zh": "Scientia Horticulturae",
     "year": "2025",
     "status": "Published",
-    "impact_factor": 4.3,
-    "doi_url": "",
-    "pdf_url": "",
-    "authors": "Zhao, Liang; He, Chunyang; Liu, Ziyao; Xu, Zilong; Sun, Ruotian; Chen, Hong; Li, Weifu; Wang, Xia; Chen, Yaohui;",
-    "publisher": "Elsevier"
+    "impact_factor": 5.03,
+    "doi": "10.1016/j.scienta.2025.114539",
+    "doi_url": "https://doi.org/10.1016/j.scienta.2025.114539",
+    "authors": "Zhao, Liang; He, Chunyang; Liu, Ziyao; Xu, Zilong; Sun, Ruotian; Chen, Hong; Li, Weifu; Wang, Xia; Chen, Yaohui;"
   }
 ]

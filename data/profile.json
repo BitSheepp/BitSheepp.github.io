@@ -28,9 +28,21 @@
       ]
     },
     "metrics": [
-      { "label_en": "Genome Projects", "label_zh": "基因组项目", "value": "4+" },
-      { "label_en": "Published/Submitted Works", "label_zh": "已发表/在投论文", "value": "4" },
-      { "label_en": "Core Tool Stack", "label_zh": "核心工具栈", "value": "Python · R · GWAS/eQTL" }
+      {
+        "label_en": "Genome Projects",
+        "label_zh": "基因组项目",
+        "value": "4+"
+      },
+      {
+        "label_en": "Published/Submitted Works",
+        "label_zh": "已发表/在投论文",
+        "value": "4"
+      },
+      {
+        "label_en": "Core Tool Stack",
+        "label_zh": "核心工具栈",
+        "value": "Python · R · GWAS/eQTL"
+      }
     ]
   },
   "education": [
@@ -81,6 +93,14 @@
         "Analyzed 627 re-sequenced tea genomes to build high-confidence SNP catalogue",
         "Mapped genes regulating secondary metabolites via GWAS",
         "Built a PyTorch ResNet-34 model for automatic leaf phenotyping (81.5% accuracy)"
+      ],
+      "title_zh": "???????????????",
+      "role_zh": "???",
+      "location_zh": "?????",
+      "highlights_zh": [
+        "?? 627 ??????????????? SNP ??",
+        "?? GWAS ????????????",
+        "?? PyTorch ResNet-34 ???????????? 81.5%"
       ]
     },
     {
@@ -92,6 +112,14 @@
         "Built temperature-gradient system with strong ascorbic acid response",
         "Identified 4 key pathways and 4 candidate genes via transcriptomics",
         "Manuscript submitted to Horticultural Plant Journal"
+      ],
+      "title_zh": "?????????????????",
+      "role_zh": "????",
+      "location_zh": "?????",
+      "highlights_zh": [
+        "???????????????????",
+        "??????? 4 ?????? 4 ?????",
+        "????? Horticultural Plant Journal"
       ]
     },
     {
@@ -103,6 +131,14 @@
         "Cloned AbCOMT1 from resistant Atalantia buxifolia cultivar",
         "Generated over-expression lines in sweet orange",
         "Published in Journal of Pineal Research"
+      ],
+      "title_zh": "AbCOMT1 ??????????",
+      "role_zh": "????",
+      "location_zh": "?????",
+      "highlights_zh": [
+        "???????? AbCOMT1",
+        "??????????",
+        "??????? Journal of Pineal Research"
       ]
     },
     {
@@ -114,15 +150,57 @@
         "Designed integrated device + algorithm pipeline",
         "Benchmarked segmentation models and YOLO variants",
         "3D reconstruction with Gaussian Splatting; key traits reached Pearson r > 0.90"
+      ],
+      "title_zh": "?????????????",
+      "role_zh": "?????",
+      "location_zh": "?????",
+      "highlights_zh": [
+        "????????????",
+        "??????????? YOLO ??",
+        "???????? 3D ???????????? Pearson r > 0.90"
       ]
     }
   ],
   "skills": {
-    "Programming": ["Python", "R", "Bash/Shell", "SQL", "LaTeX"],
-    "ML_and_Data": ["PyTorch", "scikit-learn", "YOLOv8", "OpenCV", "pandas", "NumPy", "SciPy", "tidyverse", "ggplot2"],
-    "Bioinformatics": ["EMMAX", "TASSEL", "PLINK", "VCFtools", "bcftools", "DESeq2", "featureCounts", "GCTA"],
-    "DevOps": ["Git", "GitHub", "Docker", "Conda"],
-    "Others": ["Adobe Illustrator", "OriginPro", "3D Gaussian Splatting"]
+    "Programming": [
+      "Python",
+      "R",
+      "Bash/Shell",
+      "SQL",
+      "LaTeX"
+    ],
+    "ML_and_Data": [
+      "PyTorch",
+      "scikit-learn",
+      "YOLOv8",
+      "OpenCV",
+      "pandas",
+      "NumPy",
+      "SciPy",
+      "tidyverse",
+      "ggplot2"
+    ],
+    "Bioinformatics": [
+      "EMMAX",
+      "TASSEL",
+      "PLINK",
+      "VCFtools",
+      "bcftools",
+      "DESeq2",
+      "featureCounts",
+      "GCTA"
+    ],
+    "DevOps": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Conda"
+    ],
+    "Others": [
+      "Adobe Illustrator",
+      "OriginPro",
+      "3D Gaussian Splatting"
+    ]
   },
   "awards": [
     "Outstanding Student Award (2022)",
@@ -134,5 +212,24 @@
     "Preparing for TOEFL",
     "Planning GRE after TOEFL"
   ],
-  "interests": ["Running", "Table Tennis", "Golf"]
+  "interests": [
+    "Running",
+    "Table Tennis",
+    "Golf"
+  ],
+  "awards_zh": [
+    "??????2022?",
+    "???????????2021?",
+    "?????????2023?"
+  ],
+  "languages_zh": [
+    "??????????CET-4?",
+    "???? TOEFL",
+    "?? TOEFL ??? GRE"
+  ],
+  "interests_zh": [
+    "??",
+    "???",
+    "???"
+  ]
 }

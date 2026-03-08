@@ -6,7 +6,7 @@ const I18N = {
     sec_experience: 'Academic Experience',
     sec_experience_desc: 'Projects, roles, timeline, and key outcomes.',
     sec_publications: 'Publications',
-    sec_publications_desc: 'Sorted by status and impact factor, with DOI/PDF links.',
+    sec_publications_desc: 'Sorted by status and impact factor, with DOI links.',
     sec_education_skills: 'Education & Skills',
     sec_education_skills_desc: 'Education history, awards, technical stack, and interests.',
     home: 'Home',
@@ -16,9 +16,10 @@ const I18N = {
     skills: 'Skills',
     languages_interests: 'Languages & Interests',
     doi: 'DOI',
-    pdf_download: 'PDF Download',
     pending: 'pending',
-    if_label: 'Impact Factor'
+    if_label: 'Impact Factor',
+    status_published: 'Published',
+    status_unpublished: 'Unpublished'
   },
   zh: {
     portfolio: '个人学术主页',
@@ -27,7 +28,7 @@ const I18N = {
     sec_experience: '学术经历',
     sec_experience_desc: '查看项目经历、角色分工、时间线与关键结果。',
     sec_publications: '论文成果',
-    sec_publications_desc: '按发表状态和影响因子排序，支持 DOI/PDF 链接。',
+    sec_publications_desc: '按发表状态和影响因子排序，支持 DOI 链接。',
     sec_education_skills: '教育与技能',
     sec_education_skills_desc: '查看教育背景、获奖、技术栈与兴趣方向。',
     home: '返回首页',
@@ -37,9 +38,10 @@ const I18N = {
     skills: '技能',
     languages_interests: '语言与兴趣',
     doi: 'DOI',
-    pdf_download: 'PDF 下载',
     pending: '待补充',
-    if_label: '影响因子'
+    if_label: '影响因子',
+    status_published: '已发表',
+    status_unpublished: '未发表'
   }
 };
 

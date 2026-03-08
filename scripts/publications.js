@@ -11,23 +11,30 @@ function renderAction(label, url) {
   return `<a class="action-link" href="${url}" target="_blank" rel="noopener">${label}</a>`;
 }
 
+function statusLabel(status) {
+  if ((status || '').toLowerCase() === 'published') return t('status_published');
+  return t('status_unpublished');
+}
+
 function render() {
+  const isZh = getLang() === 'zh';
   const el = document.getElementById('publication-list');
-  el.innerHTML = pubs.map((p) => `
-    <article class="entry">
-      <div>
-        <span class="badge">${p.id || ''}</span>
-        <span class="badge">${p.status || ''}</span>
-        <span class="badge">${t('if_label')}: ${p.impact_factor ?? 0}</span>
-      </div>
-      <h3>${p.title}</h3>
-      <div class="meta">${p.publication || p.venue || ''} | ${p.year || ''}</div>
-      <div>
-        ${renderAction(t('doi'), p.doi_url || '')}
-        ${renderAction(t('pdf_download'), p.pdf_url || '')}
-      </div>
-    </article>
-  `).join('');
+  el.innerHTML = pubs.map((p) => {
+    const title = isZh ? (p.title_zh || p.title_en || p.title) : (p.title_en || p.title || p.title_zh);
+    const venue = isZh ? (p.publication_zh || p.publication_en || p.publication) : (p.publication_en || p.publication || p.publication_zh);
+    return `
+      <article class="entry">
+        <div>
+          <span class="badge">${p.id || ''}</span>
+          <span class="badge">${statusLabel(p.status)}</span>
+          <span class="badge">${t('if_label')}: ${p.impact_factor ?? 0}</span>
+        </div>
+        <h3>${title}</h3>
+        <div class="meta">${venue} | ${p.year || ''}</div>
+        <div>${renderAction(t('doi'), p.doi_url || '')}</div>
+      </article>
+    `;
+  }).join('');
 }
 
 loadPublications().then((d) => {
