@@ -1,0 +1,100 @@
+{
+  "name": "Chunyang He",
+  "headline": "M.Sc. Student | Bioinformatics x AI for Genomics",
+  "contact": {
+    "phone": "+86-176-3376-2997",
+    "email": "cyhe@webmail.hzau.edu.cn",
+    "location": "Wuhan, Hubei, China"
+  },
+  "objective": "To integrate AI and bioinformatics through knowledge graphs and deep learning, with a focus on multimodal biological data integration, genetic regulation of complex traits, and precision discovery in agriculture or healthcare.",
+  "education": [
+    {
+      "school": "Huazhong Agricultural University",
+      "degree": "M.Sc. Student, Fruit Tree Breeding & Genomics",
+      "period": "Sep 2024 - Present",
+      "notes": [
+        "Direct-entry master's program admitted via undergraduate interview",
+        "First-year coursework in progress"
+      ]
+    },
+    {
+      "school": "Huazhong Agricultural University",
+      "degree": "B.Sc. in Agronomy",
+      "period": "Sep 2020 - Jun 2024",
+      "notes": [
+        "GPA: 3.61 / 4.00",
+        "Core courses: Python 96, Probability 95, Linear Algebra 91, Smart Agriculture Data Analysis 94"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "High-Throughput Root Phenomics Platform for Tea Germplasm Evaluation",
+      "role": "Principal Leader",
+      "period": "Apr 2022 - Jun 2024",
+      "location": "Wuhan, China",
+      "highlights": [
+        "Analyzed 627 re-sequenced tea genomes to build high-confidence SNP catalogue",
+        "Mapped genes regulating secondary metabolites via GWAS",
+        "Built a PyTorch ResNet-34 model for automatic leaf phenotyping (81.5% accuracy)"
+      ]
+    },
+    {
+      "title": "Temperature-Driven Regulation of Ascorbic Acid in Lettuce",
+      "role": "Co-author",
+      "period": "Mar 2023 - May 2024",
+      "location": "Wuhan, China",
+      "highlights": [
+        "Built temperature-gradient system with strong ascorbic acid response",
+        "Identified 4 key pathways and 4 candidate genes via transcriptomics",
+        "Manuscript submitted to Horticultural Plant Journal"
+      ]
+    },
+    {
+      "title": "Functional Characterisation of AbCOMT1 against Citrus Canker",
+      "role": "Co-author",
+      "period": "Jan 2024 - Mar 2025",
+      "location": "Wuhan, China",
+      "highlights": [
+        "Cloned AbCOMT1 from resistant Atalantia buxifolia cultivar",
+        "Generated over-expression lines in sweet orange",
+        "Published in Journal of Pineal Research"
+      ]
+    },
+    {
+      "title": "Automated Phenotyping Platform for Citrus Fruit Morphology",
+      "role": "Co-Leader",
+      "period": "Jan 2024 - May 2025",
+      "location": "Wuhan, China",
+      "highlights": [
+        "Designed integrated device + algorithm pipeline",
+        "Benchmarked segmentation models and YOLO variants",
+        "3D reconstruction with Gaussian Splatting; key traits reached Pearson r > 0.90"
+      ]
+    }
+  ],
+  "publications": [
+    "[S.1] Effects of temperature on L-Ascorbic acid metabolism in horticultural plants. Submitted.",
+    "[S.2] SA-dependent immunity between citrus and Candidatus Liberibacter asiaticus. Submitted to Cell.",
+    "[J.1] COMT gene in melatonin biosynthesis mediating resistance to citrus canker. Journal of Pineal Research.",
+    "[S.3] PhenoCitrus: automated platform for citrus fruit morphology phenotyping. In preparation."
+  ],
+  "skills": {
+    "Programming": ["Python", "R", "Bash/Shell", "SQL", "LaTeX"],
+    "ML_and_Data": ["PyTorch", "scikit-learn", "YOLOv8", "OpenCV", "pandas", "NumPy", "SciPy", "tidyverse", "ggplot2"],
+    "Bioinformatics": ["EMMAX", "TASSEL", "PLINK", "VCFtools", "bcftools", "DESeq2", "featureCounts", "GCTA"],
+    "DevOps": ["Git", "GitHub", "Docker", "Conda"],
+    "Others": ["Adobe Illustrator", "OriginPro", "3D Gaussian Splatting"]
+  },
+  "awards": [
+    "Outstanding Student Award (2022)",
+    "First Prize, Hundred Students Forum Campus Competition (2021)",
+    "Third Prize, Challenge Cup Provincial Competition (2023)"
+  ],
+  "languages": [
+    "CET-4 passed",
+    "Preparing for TOEFL",
+    "Planning GRE after TOEFL"
+  ],
+  "interests": ["Running", "Table Tennis", "Golf"]
+}
