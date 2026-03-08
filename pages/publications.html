@@ -12,13 +12,20 @@
 <body>
   <div class="mesh"></div>
   <main class="wrap">
-    <nav class="top-nav"><a href="../index.html">Home</a></nav>
+    <div class="topbar panel">
+      <nav class="top-nav"><a href="../index.html" data-i18n="home"></a></nav>
+      <div class="lang-switch">
+        <button data-lang-btn="en">EN</button>
+        <button data-lang-btn="zh">中文</button>
+      </div>
+    </div>
     <section class="panel">
-      <h1>Publications</h1>
-      <p class="hint">PDF/DOI 现在支持直接展示；你后续给我链接后，我可以帮你一次性填完。</p>
+      <h1 data-i18n="sec_publications"></h1>
+      <p class="hint" data-i18n="pub_hint"></p>
       <div id="publication-list"></div>
     </section>
   </main>
+  <script src="../scripts/common.js"></script>
   <script src="../scripts/publications.js"></script>
 </body>
 </html>

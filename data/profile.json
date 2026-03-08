@@ -1,43 +1,74 @@
 {
   "name": "Chunyang He",
-  "headline": "M.Sc. Student | Bioinformatics x AI for Genomics",
+  "headline": {
+    "en": "M.Sc. Student | Bioinformatics x AI for Genomics",
+    "zh": "硕士研究生 | 生物信息学与人工智能交叉研究"
+  },
   "photo": "assets/images/profile.jpg",
   "contact": {
     "phone": "+86-176-3376-2997",
     "email": "cyhe@webmail.hzau.edu.cn",
     "location": "Wuhan, Hubei, China"
   },
-  "objective": "To integrate AI and bioinformatics through knowledge graphs and deep learning, with a focus on multimodal biological data integration, genetic regulation of complex traits, and precision discovery in agriculture or healthcare.",
+  "objective": {
+    "en": "To integrate AI and bioinformatics through knowledge graphs and deep learning, focusing on multimodal biological data integration and genetic regulation of complex traits.",
+    "zh": "通过知识图谱与深度学习推动人工智能与生物信息学融合，聚焦多模态生物数据整合与复杂性状遗传调控机制解析。"
+  },
   "summary": {
-    "focus": [
-      "AI + bioinformatics integration",
-      "Genetic regulation of complex traits",
-      "Multimodal biological data analysis"
-    ],
+    "focus": {
+      "en": [
+        "AI + bioinformatics integration",
+        "Genetic regulation of complex traits",
+        "Multimodal biological data analysis"
+      ],
+      "zh": [
+        "人工智能与生物信息学融合",
+        "复杂性状遗传调控研究",
+        "多模态生物数据分析"
+      ]
+    },
     "metrics": [
-      { "label": "Genome Projects", "value": "4+" },
-      { "label": "Published/Submitted Works", "value": "4" },
-      { "label": "Core Tool Stack", "value": "Python · R · GWAS/eQTL" }
+      { "label_en": "Genome Projects", "label_zh": "基因组项目", "value": "4+" },
+      { "label_en": "Published/Submitted Works", "label_zh": "已发表/在投论文", "value": "4" },
+      { "label_en": "Core Tool Stack", "label_zh": "核心工具栈", "value": "Python · R · GWAS/eQTL" }
     ]
   },
   "education": [
     {
       "school": "Huazhong Agricultural University",
-      "degree": "M.Sc. Student, Fruit Tree Breeding & Genomics",
+      "degree": {
+        "en": "M.Sc. Student, Fruit Tree Breeding & Genomics",
+        "zh": "硕士研究生，果树遗传育种与基因组学"
+      },
       "period": "Sep 2024 - Present",
-      "notes": [
-        "Direct-entry master's program admitted via undergraduate interview",
-        "First-year coursework in progress"
-      ]
+      "notes": {
+        "en": [
+          "Direct-entry master's program admitted via undergraduate interview",
+          "First-year coursework in progress"
+        ],
+        "zh": [
+          "本科推免直博/直硕通道录取",
+          "研一课程学习进行中"
+        ]
+      }
     },
     {
       "school": "Huazhong Agricultural University",
-      "degree": "B.Sc. in Agronomy",
+      "degree": {
+        "en": "B.Sc. in Agronomy",
+        "zh": "农学学士"
+      },
       "period": "Sep 2020 - Jun 2024",
-      "notes": [
-        "GPA: 3.61 / 4.00",
-        "Core courses: Python 96, Probability 95, Linear Algebra 91, Smart Agriculture Data Analysis 94"
-      ]
+      "notes": {
+        "en": [
+          "GPA: 3.61 / 4.00",
+          "Core courses: Python 96, Probability 95, Linear Algebra 91, Smart Agriculture Data Analysis 94"
+        ],
+        "zh": [
+          "GPA：3.61 / 4.00",
+          "核心课程：Python 96，概率论95，线性代数91，智慧农业数据分析实践94"
+        ]
+      }
     }
   ],
   "experience": [
@@ -84,44 +115,6 @@
         "Benchmarked segmentation models and YOLO variants",
         "3D reconstruction with Gaussian Splatting; key traits reached Pearson r > 0.90"
       ]
-    }
-  ],
-  "publications": [
-    {
-      "id": "S.1",
-      "title": "Effects of temperature on L-Ascorbic acid metabolism in horticultural plants",
-      "venue": "Horticultural Plant Journal",
-      "year": "2024",
-      "status": "Submitted",
-      "doi": "",
-      "pdf_url": ""
-    },
-    {
-      "id": "S.2",
-      "title": "Molecular interactions for establishment and disruption of SA-dependent immunity between citrus and Candidatus Liberibacter asiaticus",
-      "venue": "Cell",
-      "year": "2025",
-      "status": "Submitted",
-      "doi": "",
-      "pdf_url": ""
-    },
-    {
-      "id": "J.1",
-      "title": "Identification of a COMT gene involved in melatonin biosynthesis mediating resistance to citrus canker",
-      "venue": "Journal of Pineal Research",
-      "year": "2025",
-      "status": "Published",
-      "doi": "",
-      "pdf_url": ""
-    },
-    {
-      "id": "S.3",
-      "title": "PhenoCitrus: an automated platform for phenotyping morphological traits of citrus fruit",
-      "venue": "In preparation",
-      "year": "2025",
-      "status": "In preparation",
-      "doi": "",
-      "pdf_url": ""
     }
   ],
   "skills": {

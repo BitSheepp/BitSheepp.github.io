@@ -4,14 +4,30 @@ async function loadData() {
   return res.json();
 }
 
-loadData().then((d) => {
-  document.getElementById('education-list').innerHTML = (d.education || []).map((e) => `
-    <article class="entry">
-      <h3>${e.school}</h3>
-      <div class="meta">${e.degree} | ${e.period}</div>
-      <ul>${(e.notes || []).map((n) => `<li>${n}</li>`).join('')}</ul>
-    </article>
-  `).join('');
+let profileData = null;
+
+function pickLangField(field, lang) {
+  if (field && typeof field === 'object' && field.en && field.zh) {
+    return lang === 'zh' ? field.zh : field.en;
+  }
+  return field || '';
+}
+
+function render() {
+  if (!profileData) return;
+  const lang = getLang();
+  const d = profileData;
+
+  document.getElementById('education-list').innerHTML = (d.education || []).map((e) => {
+    const notes = e.notes && e.notes[lang] ? e.notes[lang] : (e.notes || []);
+    return `
+      <article class="entry">
+        <h3>${e.school}</h3>
+        <div class="meta">${pickLangField(e.degree, lang)} | ${e.period}</div>
+        <ul>${(notes || []).map((n) => `<li>${n}</li>`).join('')}</ul>
+      </article>
+    `;
+  }).join('');
 
   document.getElementById('awards-list').innerHTML = (d.awards || []).map((a) => `<li>${a}</li>`).join('');
   document.getElementById('languages-list').innerHTML = (d.languages || []).map((l) => `<li>${l}</li>`).join('');
@@ -23,6 +39,12 @@ loadData().then((d) => {
       <div>${arr.map((x) => `<span class="skill-chip">${x}</span>`).join('')}</div>
     </article>
   `).join('');
+}
+
+loadData().then((d) => {
+  profileData = d;
+  render();
+  document.addEventListener('langchange', render);
 }).catch((err) => {
   document.body.innerHTML = `<main class="wrap"><section class="panel"><h2>Load Error</h2><p>${err.message}</p></section></main>`;
 });

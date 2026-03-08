@@ -12,10 +12,17 @@
 <body>
   <div class="mesh"></div>
   <main class="wrap">
+    <div class="topbar panel">
+      <div class="lang-switch">
+        <button data-lang-btn="en">EN</button>
+        <button data-lang-btn="zh">中文</button>
+      </div>
+    </div>
+
     <section class="hero panel">
-      <img id="profile-photo" class="avatar" alt="Profile photo" />
+      <div class="photo-frame"><img id="profile-photo" class="avatar" alt="Profile photo" /></div>
       <div>
-        <p class="eyebrow">Research Portfolio</p>
+        <p class="eyebrow" data-i18n="portfolio"></p>
         <h1 id="name"></h1>
         <p id="headline" class="lead"></p>
         <p id="objective"></p>
@@ -24,29 +31,30 @@
     </section>
 
     <section class="panel">
-      <h2>Quick Summary</h2>
+      <h2 data-i18n="quick_summary"></h2>
       <div id="metrics" class="metrics"></div>
       <ul id="focus" class="focus"></ul>
     </section>
 
     <section class="panel">
-      <h2>Explore Sections</h2>
+      <h2 data-i18n="explore_sections"></h2>
       <div class="cards">
         <a class="card-link" href="pages/experience.html">
-          <h3>Academic Experience</h3>
-          <p>Projects, roles, timeline, and key outcomes.</p>
+          <h3 data-i18n="sec_experience"></h3>
+          <p data-i18n="sec_experience_desc"></p>
         </a>
         <a class="card-link" href="pages/publications.html">
-          <h3>Publications</h3>
-          <p>Published/submitted works with DOI and PDF download slots.</p>
+          <h3 data-i18n="sec_publications"></h3>
+          <p data-i18n="sec_publications_desc"></p>
         </a>
         <a class="card-link" href="pages/education-skills.html">
-          <h3>Education & Skills</h3>
-          <p>Education history, awards, technical stack, and interests.</p>
+          <h3 data-i18n="sec_education_skills"></h3>
+          <p data-i18n="sec_education_skills_desc"></p>
         </a>
       </div>
     </section>
   </main>
+  <script src="scripts/common.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 </html>
