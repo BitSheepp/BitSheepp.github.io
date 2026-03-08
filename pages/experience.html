@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,25 +6,31 @@
   <title>Academic Experience | Chunyang He</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/site.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/site.css?v=20260308c" />
 </head>
 <body>
-  <div class="mesh"></div>
-  <main class="wrap">
-    <div class="topbar panel">
-      <nav class="top-nav"><a href="../index.html" data-i18n="home"></a></nav>
+  <main class="layout">
+    <header class="site-header card">
+      <div class="brand">CH</div>
+      <nav class="site-nav">
+        <a href="../index.html" data-i18n="home"></a>
+        <a href="experience.html" data-i18n="sec_experience"></a>
+        <a href="publications.html" data-i18n="sec_publications"></a>
+        <a href="education-skills.html" data-i18n="sec_education_skills"></a>
+      </nav>
       <div class="lang-switch">
         <button data-lang-btn="en">EN</button>
         <button data-lang-btn="zh">中文</button>
       </div>
-    </div>
-    <section class="panel">
+    </header>
+
+    <section class="card">
       <h1 data-i18n="sec_experience"></h1>
       <div id="experience-list"></div>
     </section>
   </main>
-  <script src="../scripts/common.js"></script>
-  <script src="../scripts/experience.js"></script>
+  <script src="../scripts/common.js?v=20260308c"></script>
+  <script src="../scripts/experience.js?v=20260308c"></script>
 </body>
 </html>

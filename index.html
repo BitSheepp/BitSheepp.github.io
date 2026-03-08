@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,55 +6,61 @@
   <title>Chunyang He | Research Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/site.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css?v=20260308c" />
 </head>
 <body>
-  <div class="mesh"></div>
-  <main class="wrap">
-    <div class="topbar panel">
+  <main class="layout">
+    <header class="site-header card">
+      <div class="brand">CH</div>
+      <nav class="site-nav">
+        <a href="index.html" data-i18n="home"></a>
+        <a href="pages/experience.html" data-i18n="sec_experience"></a>
+        <a href="pages/publications.html" data-i18n="sec_publications"></a>
+        <a href="pages/education-skills.html" data-i18n="sec_education_skills"></a>
+      </nav>
       <div class="lang-switch">
         <button data-lang-btn="en">EN</button>
         <button data-lang-btn="zh">中文</button>
       </div>
-    </div>
+    </header>
 
-    <section class="hero panel">
-      <div class="photo-frame"><img id="profile-photo" class="avatar" alt="Profile photo" /></div>
+    <section class="hero card">
+      <div class="photo-shell"><img id="profile-photo" class="avatar" alt="Profile photo" /></div>
       <div>
         <p class="eyebrow" data-i18n="portfolio"></p>
         <h1 id="name"></h1>
-        <p id="headline" class="lead"></p>
-        <p id="objective"></p>
-        <div id="contact" class="chips"></div>
+        <p id="headline" class="headline"></p>
+        <p id="objective" class="objective"></p>
+        <div id="contact" class="contact-tags"></div>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="card">
       <h2 data-i18n="quick_summary"></h2>
       <div id="metrics" class="metrics"></div>
-      <ul id="focus" class="focus"></ul>
+      <ul id="focus" class="focus-list"></ul>
     </section>
 
-    <section class="panel">
+    <section class="card">
       <h2 data-i18n="explore_sections"></h2>
-      <div class="cards">
-        <a class="card-link" href="pages/experience.html">
+      <div class="grid-links">
+        <a class="link-card" href="pages/experience.html">
           <h3 data-i18n="sec_experience"></h3>
           <p data-i18n="sec_experience_desc"></p>
         </a>
-        <a class="card-link" href="pages/publications.html">
+        <a class="link-card" href="pages/publications.html">
           <h3 data-i18n="sec_publications"></h3>
           <p data-i18n="sec_publications_desc"></p>
         </a>
-        <a class="card-link" href="pages/education-skills.html">
+        <a class="link-card" href="pages/education-skills.html">
           <h3 data-i18n="sec_education_skills"></h3>
           <p data-i18n="sec_education_skills_desc"></p>
         </a>
       </div>
     </section>
   </main>
-  <script src="scripts/common.js"></script>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/common.js?v=20260308c"></script>
+  <script src="scripts/index.js?v=20260308c"></script>
 </body>
 </html>
