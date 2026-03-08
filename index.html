@@ -1,71 +1,52 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chunyang He - CV</title>
+  <title>Chunyang He | Research Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css" />
 </head>
 <body>
-  <div class="bg"></div>
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
-  <main class="container">
-    <header class="hero card reveal">
-      <p class="kicker">Curriculum Vitae</p>
-      <h1 id="name"></h1>
-      <p id="headline" class="headline"></p>
-      <div id="contact" class="contact"></div>
-    </header>
-
-    <section class="card reveal">
-      <h2>Objective</h2>
-      <p id="objective"></p>
-    </section>
-
-    <section class="card reveal">
-      <h2>Academic Experience</h2>
-      <div id="experience" class="timeline"></div>
-    </section>
-
-    <section class="card grid-two reveal">
+  <div class="mesh"></div>
+  <main class="wrap">
+    <section class="hero panel">
+      <img id="profile-photo" class="avatar" alt="Profile photo" />
       <div>
-        <h2>Education</h2>
-        <div id="education"></div>
-      </div>
-      <div>
-        <h2>Awards</h2>
-        <ul id="awards"></ul>
+        <p class="eyebrow">Research Portfolio</p>
+        <h1 id="name"></h1>
+        <p id="headline" class="lead"></p>
+        <p id="objective"></p>
+        <div id="contact" class="chips"></div>
       </div>
     </section>
 
-    <section class="card grid-two reveal">
-      <div>
-        <h2>Publications</h2>
-        <ul id="publications"></ul>
-      </div>
-      <div>
-        <h2>Skills</h2>
-        <div id="skills"></div>
-      </div>
+    <section class="panel">
+      <h2>Quick Summary</h2>
+      <div id="metrics" class="metrics"></div>
+      <ul id="focus" class="focus"></ul>
     </section>
 
-    <section class="card grid-two reveal">
-      <div>
-        <h2>Languages</h2>
-        <ul id="languages"></ul>
-      </div>
-      <div>
-        <h2>Interests</h2>
-        <ul id="interests"></ul>
+    <section class="panel">
+      <h2>Explore Sections</h2>
+      <div class="cards">
+        <a class="card-link" href="pages/experience.html">
+          <h3>Academic Experience</h3>
+          <p>Projects, roles, timeline, and key outcomes.</p>
+        </a>
+        <a class="card-link" href="pages/publications.html">
+          <h3>Publications</h3>
+          <p>Published/submitted works with DOI and PDF download slots.</p>
+        </a>
+        <a class="card-link" href="pages/education-skills.html">
+          <h3>Education & Skills</h3>
+          <p>Education history, awards, technical stack, and interests.</p>
+        </a>
       </div>
     </section>
-
-    <footer class="footer">Built for easy manual updates via <code>data/profile.json</code>.</footer>
   </main>
-  <script src="script.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿async function loadData() {
+async function loadData() {
   const res = await fetch('data/profile.json');
   if (!res.ok) throw new Error('Failed to load profile data');
   return res.json();

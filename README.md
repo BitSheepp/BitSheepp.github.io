@@ -1,4 +1,4 @@
-﻿# Personal CV Website
+# Personal CV Website
 
 This is a static CV website with data-driven content.
 

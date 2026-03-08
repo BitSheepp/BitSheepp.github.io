@@ -1,12 +1,25 @@
 {
   "name": "Chunyang He",
   "headline": "M.Sc. Student | Bioinformatics x AI for Genomics",
+  "photo": "assets/images/profile.jpg",
   "contact": {
     "phone": "+86-176-3376-2997",
     "email": "cyhe@webmail.hzau.edu.cn",
     "location": "Wuhan, Hubei, China"
   },
   "objective": "To integrate AI and bioinformatics through knowledge graphs and deep learning, with a focus on multimodal biological data integration, genetic regulation of complex traits, and precision discovery in agriculture or healthcare.",
+  "summary": {
+    "focus": [
+      "AI + bioinformatics integration",
+      "Genetic regulation of complex traits",
+      "Multimodal biological data analysis"
+    ],
+    "metrics": [
+      { "label": "Genome Projects", "value": "4+" },
+      { "label": "Published/Submitted Works", "value": "4" },
+      { "label": "Core Tool Stack", "value": "Python · R · GWAS/eQTL" }
+    ]
+  },
   "education": [
     {
       "school": "Huazhong Agricultural University",
@@ -74,10 +87,42 @@
     }
   ],
   "publications": [
-    "[S.1] Effects of temperature on L-Ascorbic acid metabolism in horticultural plants. Submitted.",
-    "[S.2] SA-dependent immunity between citrus and Candidatus Liberibacter asiaticus. Submitted to Cell.",
-    "[J.1] COMT gene in melatonin biosynthesis mediating resistance to citrus canker. Journal of Pineal Research.",
-    "[S.3] PhenoCitrus: automated platform for citrus fruit morphology phenotyping. In preparation."
+    {
+      "id": "S.1",
+      "title": "Effects of temperature on L-Ascorbic acid metabolism in horticultural plants",
+      "venue": "Horticultural Plant Journal",
+      "year": "2024",
+      "status": "Submitted",
+      "doi": "",
+      "pdf_url": ""
+    },
+    {
+      "id": "S.2",
+      "title": "Molecular interactions for establishment and disruption of SA-dependent immunity between citrus and Candidatus Liberibacter asiaticus",
+      "venue": "Cell",
+      "year": "2025",
+      "status": "Submitted",
+      "doi": "",
+      "pdf_url": ""
+    },
+    {
+      "id": "J.1",
+      "title": "Identification of a COMT gene involved in melatonin biosynthesis mediating resistance to citrus canker",
+      "venue": "Journal of Pineal Research",
+      "year": "2025",
+      "status": "Published",
+      "doi": "",
+      "pdf_url": ""
+    },
+    {
+      "id": "S.3",
+      "title": "PhenoCitrus: an automated platform for phenotyping morphological traits of citrus fruit",
+      "venue": "In preparation",
+      "year": "2025",
+      "status": "In preparation",
+      "doi": "",
+      "pdf_url": ""
+    }
   ],
   "skills": {
     "Programming": ["Python", "R", "Bash/Shell", "SQL", "LaTeX"],
