@@ -1,0 +1,47 @@
+education:
+  - school: "Huazhong Agricultural University"
+    degree: "M.Sc. - Fruit Tree Breeding & Genomics"
+    period: "2024.09 - Present"
+    place: "Wuhan, China"
+    notes: "Direct-entry master's program; first-year coursework in progress"
+  - school: "Huazhong Agricultural University"
+    degree: "B.Sc. in Agronomy (GPA 3.61/4.00)"
+    period: "2020.09 - 2024.06"
+    place: "Wuhan, China"
+    notes: "Core courses: Python (96), Probability (95), Linear Algebra (91), Smart Agriculture Data Analysis (94)"
+
+projects_selected:
+  - title: "High-Throughput Root Phenomics for Tea"
+    role: "Principal Leader"
+    period: "2022.04 - 2024.06"
+    bullets:
+      - "Analyzed 627 resequenced genomes to build a high-confidence SNP catalogue and map loci related to secondary metabolites."
+      - "Built a PyTorch ResNet-34 model for automatic leaf phenotyping with 81.5% accuracy."
+    tags: [GWAS, ResNet-34, SNP]
+  - title: "PhenoCitrus: Automated Citrus Fruit Phenotyping"
+    role: "Co-Leader"
+    period: "2024.01 - 2025.05"
+    bullets:
+      - "Integrated device design with segmentation and trait extraction workflows for citrus fruit morphology."
+      - "Used 3D Gaussian Splatting to reconstruct fruit structure, with key traits reaching Pearson r > 0.90 versus manual measurements."
+    tags: [YOLOv8, Segmentation, 3DGS]
+  - title: "Temperature-Driven Regulation of Ascorbic Acid in Lettuce"
+    role: "Co-author"
+    period: "2023.03 - 2024.05"
+    bullets:
+      - "Established a temperature-gradient experiment and identified strong ascorbic acid responses."
+      - "RNA-seq analysis highlighted four major pathways and four candidate genes."
+    tags: [Transcriptomics, Metabolism]
+
+skills:
+  - group: "Programming | Data"
+    items: [Python, R, Bash, SQL, PyTorch, scikit-learn, OpenCV, pandas, NumPy]
+  - group: "Bioinformatics"
+    items: [EMMAX, TASSEL, PLINK, VCFtools, bcftools, DESeq2, featureCounts, GCTA]
+  - group: "Tools"
+    items: [Git/GitHub, Docker, Conda, LaTeX, Illustrator, OriginPro, YOLOv8, 3D Gaussian Splatting]
+
+awards:
+  - "Outstanding Student Award (2022) | HZAU"
+  - "First Prize, Hundred Students Forum Campus Competition (2021)"
+  - "Third Prize, Challenge Cup Provincial Competition (2023)"
