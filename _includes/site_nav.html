@@ -1,0 +1,12 @@
+{% assign current = include.current | default: "" %}
+<nav class="site-nav">
+  <a class="site-brand" href="{{ '/' | relative_url }}">Chunyang He</a>
+  <div class="site-links">
+    <a href="{{ '/' | relative_url }}" {% if current == 'home' %}class="is-active"{% endif %}>Home</a>
+    <a href="{{ '/pages/cv/' | relative_url }}" {% if current == 'cv' %}class="is-active"{% endif %}>CV</a>
+    <a href="{{ '/projects/' | relative_url }}" {% if current == 'projects' %}class="is-active"{% endif %}>Projects</a>
+    <a href="{{ '/publications/' | relative_url }}" {% if current == 'publications' %}class="is-active"{% endif %}>Publications</a>
+    <a href="{{ '/blog/' | relative_url }}" {% if current == 'blog' %}class="is-active"{% endif %}>Blog</a>
+    <a href="{{ '/news/' | relative_url }}" {% if current == 'news' %}class="is-active"{% endif %}>News</a>
+  </div>
+</nav>
