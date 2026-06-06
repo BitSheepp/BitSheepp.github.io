@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<div class="wrapper">
+  {% include site_nav.html current="blog" %}
+
+  <article class="page-shell">
+    <section class="page-panel">
+      <div class="page-kicker">Blog Note</div>
+      <h2>{{ page.title }}</h2>
+      <p class="page-intro muted">{{ page.date | date: "%Y-%m-%d" }}{% if page.description %} | {{ page.description }}{% endif %}</p>
+    </section>
+
+    <section class="section">
+      {{ content }}
+    </section>
+
+    <section class="section">
+      <h2>Comments</h2>
+      <p class="muted">Reading is open to everyone. Commenting uses GitHub login.</p>
+      <script src="https://utteranc.es/client.js"
+        repo="BitSheepp/BitSheepp.github.io"
+        issue-term="title"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+  </article>
+</div>
