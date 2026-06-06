@@ -1,0 +1,31 @@
+title: Chunyang He
+description: Personal academic website of Chunyang He
+url: https://bitsheepp.github.io
+baseurl: ""
+
+theme: jekyll-theme-primer
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - scripts
+  - styles
+  - data
+  - pages
+  - tools
+  - push_to_github.ps1
+  - script.js
+  - style.css
+  - home-check.png
+  - README.md
