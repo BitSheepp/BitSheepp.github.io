@@ -2,6 +2,7 @@
 title: "First note on the new site"
 layout: post
 description: "A starting point for diary-style writing"
+tags: [diary, site]
 ---
 
 This page is the first post in the new blog area.
