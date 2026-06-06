@@ -1,0 +1,30 @@
+name: "Chunyang He"
+subtitle: "AI x Bioinformatics | Multimodal Data | Citrus and Plant Genomics"
+location: "Huazhong Agricultural University | Wuhan, China"
+email: "cyhe@webmail.hzau.edu.cn"
+phone: "+86-176-3376-2997"
+
+about: >
+  I focus on integrating AI with bioinformatics to study multimodal biological data,
+  genetic regulation of complex traits, and reproducible genomics workflows. My work
+  spans GWAS, transcriptomics, computer vision for phenotyping, and data-driven
+  systems that support crop genetics and precision breeding research.
+
+badges:
+  - GWAS
+  - Transcriptomics
+  - PyTorch/ResNet
+  - YOLOv8
+  - 3D Gaussian Splatting
+  - Reproducible Pipelines
+
+research_themes:
+  - title: "Complex trait genetics in horticultural crops"
+    summary: "Using GWAS, transcriptomics, and comparative genomics to identify loci and pathways underlying disease resistance, fruit quality, and developmental variation."
+    tags: [GWAS, Transcriptomics, Candidate genes]
+  - title: "AI-assisted phenotyping and biological image analysis"
+    summary: "Building automated pipelines for root systems, citrus fruit morphology, and other visual phenotypes with deep learning, detection, and 3D reconstruction."
+    tags: [PyTorch, YOLO, 3D reconstruction]
+  - title: "Bioinformatics infrastructure for reproducible genomics"
+    summary: "Designing analysis workflows, data organization strategies, and tool stacks that make large-scale genome and trait studies easier to reproduce and extend."
+    tags: [Python, Workflow design, Data integration]
