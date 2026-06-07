@@ -1,5 +1,5 @@
 ---
-title: "AI 辅助表型分析与生物图像计算"
+title: "植物表型分析与生物图像计算"
 lang: cn
 slug: "ai-phenotyping"
 summary: "构建从图像采集、模型推断到性状提取的一体化表型分析系统。"
