@@ -5,19 +5,18 @@ layout: page
 lang: en
 nav_key: lab
 alt_url: /cn/lab/
-page_kicker: Future Module
-description: "A reserved route for future lab identity, members, directions, and opportunities."
+page_kicker: Future Page
+description: "A reserved page for future lab identity, members, directions, and resources."
 ---
 
-This route is intentionally lightweight in V1.
+This page remains light in V2 and simply keeps space for future lab-facing content.
 
-It reserves structure for a future **lab-facing layer**, including:
+It can later grow into:
 
 - research directions
 - members
 - facilities or platforms
-- opportunities and joining information
+- opportunities
 - shared resources
 
-When this section expands later, it should still follow the same rule as the rest of the site:
-clear public pages, Markdown-based maintenance, and no editor-like UI on the front end.
+The maintenance model should stay the same: public pages on the front end, with content written in Markdown and structured data.
