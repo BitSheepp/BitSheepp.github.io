@@ -5,25 +5,31 @@ layout: page
 lang: en
 nav_key: blog
 alt_url: /cn/blog/
-page_kicker: Writing Module
-description: "A light writing area for notes, diary-like entries, and short reflections."
+page_kicker: Writing
+description: "A light space for notes, diary-like entries, and short reflections."
 ---
 
-This route exists as an **optional writing module** rather than the center of the site.
-It is kept intentionally light in V1 so the academic profile remains the main focus.
+This page is kept intentionally simple in V2.
+
+It is a secondary writing space for:
+
+- research notes
+- short reflections
+- diary-style posts
+- material that does not belong on the main academic pages
 
 ## Current status
 
 - public reading is open to everyone
 - comments use GitHub login through utterances
-- future posts should be written directly in `_posts/` using Markdown
+- new posts should be written directly in `_posts/` with Markdown
 
 ## Existing posts
 
 {% assign posts_en = site.posts | where: "lang", "en" %}
 {% if posts_en.size > 0 %}
 {% for post in posts_en %}
-- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%Y-%m-%d" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%Y-%m-%d" }}
 {% endfor %}
 {% else %}
 No English posts have been added yet.
