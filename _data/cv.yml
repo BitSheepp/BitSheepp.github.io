@@ -1,47 +1,76 @@
 education:
-  - school: "Huazhong Agricultural University"
-    degree: "M.Sc. - Fruit Tree Breeding & Genomics"
+  - school_en: "Huazhong Agricultural University"
+    school_cn: "华中农业大学"
+    degree_en: "M.Sc. in Fruit Tree Breeding and Genomics"
+    degree_cn: "果树种质创新与利用 硕士研究生"
     period: "2024.09 - Present"
-    place: "Wuhan, China"
-    notes: "Direct-entry master's program; first-year coursework in progress"
-  - school: "Huazhong Agricultural University"
-    degree: "B.Sc. in Agronomy (GPA 3.61/4.00)"
+    place_en: "Wuhan, China"
+    place_cn: "中国武汉"
+    notes_en: "Direct-entry master's program with emphasis on genomics, quantitative traits, and computational analysis."
+    notes_cn: "本硕衔接培养阶段，当前重点围绕基因组学、数量性状解析与计算分析展开。"
+  - school_en: "Huazhong Agricultural University"
+    school_cn: "华中农业大学"
+    degree_en: "B.Sc. in Agronomy (GPA 3.61/4.00)"
+    degree_cn: "农学学士（GPA 3.61/4.00）"
     period: "2020.09 - 2024.06"
-    place: "Wuhan, China"
-    notes: "Core courses: Python (96), Probability (95), Linear Algebra (91), Smart Agriculture Data Analysis (94)"
+    place_en: "Wuhan, China"
+    place_cn: "中国武汉"
+    notes_en: "Core coursework included Python, probability, linear algebra, and data analysis for smart agriculture."
+    notes_cn: "核心课程包括 Python、概率论、线性代数与智慧农业数据分析等。"
 
 projects_selected:
-  - title: "High-Throughput Root Phenomics for Tea"
-    role: "Principal Leader"
+  - title_en: "High-Throughput Root Phenomics for Tea"
+    title_cn: "茶树高通量根系表型组分析"
+    role_en: "Principal Leader"
+    role_cn: "负责人"
     period: "2022.04 - 2024.06"
-    bullets:
+    bullets_en:
       - "Analyzed 627 resequenced genomes to build a high-confidence SNP catalogue and map loci related to secondary metabolites."
       - "Built a PyTorch ResNet-34 model for automatic leaf phenotyping with 81.5% accuracy."
+    bullets_cn:
+      - "分析 627 份重测序材料，构建高可信 SNP 图谱并定位与次生代谢相关的候选位点。"
+      - "基于 PyTorch 搭建 ResNet-34 自动表型识别模型，叶片分类准确率达到 81.5%。"
     tags: [GWAS, ResNet-34, SNP]
-  - title: "PhenoCitrus: Automated Citrus Fruit Phenotyping"
-    role: "Co-Leader"
+  - title_en: "PhenoCitrus: Automated Citrus Fruit Phenotyping"
+    title_cn: "PhenoCitrus：柑橘果实自动化表型平台"
+    role_en: "Co-Leader"
+    role_cn: "共同负责人"
     period: "2024.01 - 2025.05"
-    bullets:
+    bullets_en:
       - "Integrated device design with segmentation and trait extraction workflows for citrus fruit morphology."
       - "Used 3D Gaussian Splatting to reconstruct fruit structure, with key traits reaching Pearson r > 0.90 versus manual measurements."
+    bullets_cn:
+      - "将设备设计、图像分割与性状提取流程整合为一套柑橘果实形态分析系统。"
+      - "基于 3D Gaussian Splatting 重建果实结构，关键性状与人工测量相关系数超过 0.90。"
     tags: [YOLOv8, Segmentation, 3DGS]
-  - title: "Temperature-Driven Regulation of Ascorbic Acid in Lettuce"
-    role: "Co-author"
+  - title_en: "Temperature-Driven Regulation of Ascorbic Acid in Lettuce"
+    title_cn: "温度调控生菜抗坏血酸积累机制研究"
+    role_en: "Co-author"
+    role_cn: "合作作者"
     period: "2023.03 - 2024.05"
-    bullets:
+    bullets_en:
       - "Established a temperature-gradient experiment and identified strong ascorbic acid responses."
       - "RNA-seq analysis highlighted four major pathways and four candidate genes."
+    bullets_cn:
+      - "建立温度梯度试验体系，确认抗坏血酸积累存在显著温度响应。"
+      - "转录组分析锁定 4 条关键代谢通路与 4 个候选调控基因。"
     tags: [Transcriptomics, Metabolism]
 
 skills:
-  - group: "Programming | Data"
+  - group_en: "Programming and Data"
+    group_cn: "编程与数据分析"
     items: [Python, R, Bash, SQL, PyTorch, scikit-learn, OpenCV, pandas, NumPy]
-  - group: "Bioinformatics"
+  - group_en: "Bioinformatics"
+    group_cn: "生物信息学"
     items: [EMMAX, TASSEL, PLINK, VCFtools, bcftools, DESeq2, featureCounts, GCTA]
-  - group: "Tools"
+  - group_en: "Research Tools"
+    group_cn: "科研工具"
     items: [Git/GitHub, Docker, Conda, LaTeX, Illustrator, OriginPro, YOLOv8, 3D Gaussian Splatting]
 
 awards:
-  - "Outstanding Student Award (2022) | HZAU"
-  - "First Prize, Hundred Students Forum Campus Competition (2021)"
-  - "Third Prize, Challenge Cup Provincial Competition (2023)"
+  - en: "Outstanding Student Award (2022) | HZAU"
+    cn: "华中农业大学优秀学生（2022）"
+  - en: "First Prize, Hundred Students Forum Campus Competition (2021)"
+    cn: "百生讲坛校赛一等奖（2021）"
+  - en: "Third Prize, Challenge Cup Provincial Competition (2023)"
+    cn: "挑战杯省赛三等奖（2023）"

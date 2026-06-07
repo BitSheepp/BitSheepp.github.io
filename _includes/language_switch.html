@@ -1,0 +1,9 @@
+<div class="language-switch">
+  {% if page.lang == "cn" %}
+    <a href="{{ page.alt_url | default: '/' | relative_url }}">EN</a>
+    <span class="is-active">中文</span>
+  {% else %}
+    <span class="is-active">EN</span>
+    <a href="{{ page.alt_url | default: '/cn/' | relative_url }}">中文</a>
+  {% endif %}
+</div>

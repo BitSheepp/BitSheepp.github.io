@@ -1,34 +1,17 @@
 ---
 title: News
 permalink: /news/
-layout: default
+layout: page
+lang: en
+nav_key: about
+alt_url: /cn/
+page_kicker: Update Stream
+description: "Short update entries collected from the same structured data used on the homepage."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+{% for item in site.data.news %}
+### {{ item.date }} · {{ item.title_en }}
 
-<div class="wrapper">
-  {% include site_nav.html current="news" %}
+{{ item.detail_en }}
 
-  <div class="page-shell">
-    <section class="page-panel">
-      <div class="page-kicker">Timeline</div>
-      <h2>Recent milestones across the website and research</h2>
-      <p class="page-intro muted">This page keeps short updates lightweight, while the blog is reserved for fuller diary-style writing.</p>
-    </section>
-
-    <section class="section">
-      <h2>News</h2>
-      <div class="timeline">
-        {% for item in site.data.news %}
-        <div class="timeline-item">
-          <div class="timeline-year">{{ item.date }}</div>
-          <div>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.detail }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </section>
-  </div>
-</div>
+{% endfor %}

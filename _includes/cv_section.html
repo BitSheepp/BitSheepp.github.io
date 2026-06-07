@@ -1,0 +1,31 @@
+{% assign lang = include.lang | default: "en" %}
+{% assign cv = site.data.cv %}
+<section class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">{% if lang == "cn" %}履历摘要{% else %}CV Snapshot{% endif %}</p>
+      <h2>{% if lang == "cn" %}教育、项目与技能概览{% else %}Education, projects, and technical profile{% endif %}</h2>
+      <p class="section-intro">{% if lang == "cn" %}首页保持简洁，这里只展示关键履历信息；完整内容进入独立 CV 页面。{% else %}The homepage stays compact. This section only surfaces core academic qualifications before the full CV page takes over.{% endif %}</p>
+    </div>
+    <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/cv/' | relative_url }}{% else %}{{ '/cv/' | relative_url }}{% endif %}">
+      {% if lang == "cn" %}查看完整 CV{% else %}Open full CV{% endif %}
+    </a>
+  </div>
+  <div class="grid grid-tight">
+    {% for edu in cv.education limit:2 %}
+      <article class="card">
+        <div class="publication-meta">{% if lang == "cn" %}教育经历{% else %}Education{% endif %}</div>
+        <h3>{% if lang == "cn" %}{{ edu.school_cn }}{% else %}{{ edu.school_en }}{% endif %}</h3>
+        <p class="muted">{% if lang == "cn" %}{{ edu.degree_cn }}{% else %}{{ edu.degree_en }}{% endif %}</p>
+        <p>{% if lang == "cn" %}{{ edu.notes_cn }}{% else %}{{ edu.notes_en }}{% endif %}</p>
+      </article>
+    {% endfor %}
+    {% for skill in cv.skills limit:2 %}
+      <article class="card">
+        <div class="publication-meta">{% if lang == "cn" %}技能模块{% else %}Skill Block{% endif %}</div>
+        <h3>{% if lang == "cn" %}{{ skill.group_cn }}{% else %}{{ skill.group_en }}{% endif %}</h3>
+        <div class="badges">{% for item in skill.items %}<span class="badge">{{ item }}</span>{% endfor %}</div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

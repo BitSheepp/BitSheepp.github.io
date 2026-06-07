@@ -1,30 +1,75 @@
 name: "Chunyang He"
-subtitle: "AI x Bioinformatics | Multimodal Data | Citrus and Plant Genomics"
-location: "Huazhong Agricultural University | Wuhan, China"
+name_cn: "何春阳"
+title_en: "AI x Bioinformatics | Multimodal Data | Citrus and Plant Genomics"
+title_cn: "人工智能 × 生物信息学 × 多模态数据 × 柑橘与植物基因组"
+affiliation_en: "Huazhong Agricultural University"
+affiliation_cn: "华中农业大学"
+location_en: "Wuhan, China"
+location_cn: "中国武汉"
 email: "cyhe@webmail.hzau.edu.cn"
 phone: "+86-176-3376-2997"
 
-about: >
+hero_intro_en: >
   I focus on integrating AI with bioinformatics to study multimodal biological data,
   genetic regulation of complex traits, and reproducible genomics workflows. My work
   spans GWAS, transcriptomics, computer vision for phenotyping, and data-driven
   systems that support crop genetics and precision breeding research.
+hero_intro_cn: >
+  我的研究聚焦于将人工智能与生物信息学结合，用于解析多模态生物数据、复杂性状遗传调控机制，
+  以及可复现的基因组学分析流程。当前工作覆盖 GWAS、转录组学、表型视觉分析，以及支撑作物遗传学与精准育种的数据驱动系统。
+
+about_intro_en: >
+  This site is designed as a resume-first academic homepage: concise on the front page,
+  deeper through dedicated research, publication, and CV pages, and ready to grow toward
+  future lab and writing modules.
+about_intro_cn: >
+  这个网站以学术简历展示为主线：首页保持克制，只呈现核心摘要；更完整的研究、论文与履历内容则通过独立页面展开，
+  同时也为未来的实验室展示与博客记录预留了扩展空间。
 
 badges:
   - GWAS
   - Transcriptomics
-  - PyTorch/ResNet
+  - PyTorch
   - YOLOv8
   - 3D Gaussian Splatting
   - Reproducible Pipelines
 
+social_links:
+  - label: "GitHub"
+    url: "https://github.com/BitSheepp"
+  - label: "Email"
+    url: "mailto:cyhe@webmail.hzau.edu.cn"
+
+featured_metrics:
+  - value: 4
+    label_en: "Published Papers"
+    label_cn: "已发表论文"
+  - value: 3
+    label_en: "Research Themes"
+    label_cn: "研究主题"
+  - value: 1
+    label_en: "Current Degree"
+    label_cn: "当前学位阶段"
+
 research_themes:
-  - title: "Complex trait genetics in horticultural crops"
-    summary: "Using GWAS, transcriptomics, and comparative genomics to identify loci and pathways underlying disease resistance, fruit quality, and developmental variation."
+  - title_en: "Complex Trait Genetics in Horticultural Crops"
+    title_cn: "园艺作物复杂性状遗传学"
+    summary_en: "Using GWAS, transcriptomics, and comparative genomics to identify loci and pathways behind disease resistance, fruit quality, and developmental traits."
+    summary_cn: "结合 GWAS、转录组学与比较基因组学，解析病害抗性、果实品质与发育性状背后的位点与调控通路。"
     tags: [GWAS, Transcriptomics, Candidate genes]
-  - title: "AI-assisted phenotyping and biological image analysis"
-    summary: "Building automated pipelines for root systems, citrus fruit morphology, and other visual phenotypes with deep learning, detection, and 3D reconstruction."
+    url_en: "/research/complex-trait-genetics/"
+    url_cn: "/cn/research/complex-trait-genetics/"
+  - title_en: "AI-Assisted Phenotyping and Biological Image Analysis"
+    title_cn: "AI 辅助表型分析与生物图像计算"
+    summary_en: "Building automated pipelines for root systems, citrus fruit morphology, and other visual phenotypes with deep learning and 3D reconstruction."
+    summary_cn: "利用深度学习与三维重建方法，为根系、柑橘果实形态等视觉表型构建自动化分析流程。"
     tags: [PyTorch, YOLO, 3D reconstruction]
-  - title: "Bioinformatics infrastructure for reproducible genomics"
-    summary: "Designing analysis workflows, data organization strategies, and tool stacks that make large-scale genome and trait studies easier to reproduce and extend."
+    url_en: "/research/ai-phenotyping/"
+    url_cn: "/cn/research/ai-phenotyping/"
+  - title_en: "Reproducible Bioinformatics Infrastructure"
+    title_cn: "可复现的生物信息学分析基础设施"
+    summary_en: "Designing robust workflows and data structures that make large-scale genomics analysis easier to verify, reuse, and extend."
+    summary_cn: "构建稳健的分析流程与数据组织方式，使大规模基因组学研究更易验证、复用与扩展。"
     tags: [Python, Workflow design, Data integration]
+    url_en: "/research/reproducible-pipelines/"
+    url_cn: "/cn/research/reproducible-pipelines/"

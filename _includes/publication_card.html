@@ -1,0 +1,17 @@
+{% assign lang = include.lang | default: "en" %}
+{% assign pub = include.pub %}
+<article class="card publication-card">
+  <div class="publication-meta">{{ pub.venue }} | {{ pub.year }}</div>
+  <h3>{{ pub.title }}</h3>
+  <p class="muted">{{ pub.authors }}</p>
+  {% if lang == "cn" %}
+    {% if pub.summary_cn %}<p>{{ pub.summary_cn }}</p>{% endif %}
+  {% else %}
+    {% if pub.summary_en %}<p>{{ pub.summary_en }}</p>{% endif %}
+  {% endif %}
+  <div class="badges">
+    <span class="badge">{% if lang == "cn" %}{{ pub.status_cn }}{% else %}{{ pub.status_en }}{% endif %}</span>
+    <span class="badge">IF {{ pub.impact_factor }}</span>
+    {% if pub.doi_url %}<a class="badge badge-link" href="{{ pub.doi_url }}">DOI</a>{% endif %}
+  </div>
+</article>

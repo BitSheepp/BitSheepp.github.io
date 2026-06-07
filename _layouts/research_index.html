@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign items = site.research | where: "lang", lang | sort: "order" %}
+<div class="page-shell">
+  <section class="page-panel">
+    <div class="page-kicker">{% if lang == "cn" %}研究页面{% else %}Research Page{% endif %}</div>
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro muted">{{ page.description }}</p>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {% for entry in items %}
+        {% include research_card.html lang=lang item=entry %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

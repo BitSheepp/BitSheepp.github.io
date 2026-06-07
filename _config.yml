@@ -1,5 +1,5 @@
 title: Chunyang He
-description: Personal academic website of Chunyang He
+description: Dual-language academic website of Chunyang He
 url: https://bitsheepp.github.io
 baseurl: ""
 
@@ -9,6 +9,18 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: page
 
 include:
   - _pages
@@ -29,3 +41,4 @@ exclude:
   - style.css
   - home-check.png
   - README.md
+  - writer_space

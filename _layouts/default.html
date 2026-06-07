@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]]
+        },
+        svg: { fontCache: "global" }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </head>
+  <body>
+    <div class="page-backdrop"></div>
+    <main class="wrapper">
+      {% include site_nav.html %}
+      {{ content }}
+    </main>
+    <footer class="site-footer wrapper">
+      <div>
+        <strong>{% if page.lang == "cn" %}{{ site.data.profile.name_cn }}{% else %}{{ site.data.profile.name }}{% endif %}</strong>
+        <span>{% if page.lang == "cn" %} · 双语学术主页{% else %} · Dual-language academic homepage{% endif %}</span>
+      </div>
+      <div class="footer-links">
+        {% for link in site.data.profile.social_links %}
+          <a href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    </footer>
+  </body>
+</html>

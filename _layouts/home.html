@@ -1,0 +1,110 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign research_items = site.research | where: "lang", lang | sort: "order" %}
+{% assign featured_research = research_items | where: "featured", true %}
+{% assign publications = site.data.publications | sort: "year" | reverse %}
+{% assign cv = site.data.cv %}
+{% assign news = site.data.news %}
+
+{% include hero_block.html lang=lang %}
+
+<section class="feature-panel">
+  <div>
+    <div class="feature-kicker">{% if lang == "cn" %}网站架构{% else %}Site Architecture{% endif %}</div>
+    <h3>{% if lang == "cn" %}首页用于展示定位，内页承载完整内容{% else %}The homepage introduces the profile; dedicated pages carry the depth{% endif %}</h3>
+    <p>{% if lang == "cn" %}这套结构以履历与研究展示为主线，同时兼顾后续博客、实验室与项目扩展。内容维护方式保持为 Markdown、LaTeX 与 YAML，便于长期更新。{% else %}This structure is resume-first and research-led, while staying ready for future blog, lab, and project expansion. Content remains maintainable through Markdown, LaTeX, and YAML rather than a visible public editor.{% endif %}</p>
+  </div>
+  <div class="feature-metrics">
+    <div class="metric-box">
+      <span class="feature-kicker">{% if lang == "cn" %}当前阶段{% else %}Current Stage{% endif %}</span>
+      <strong>{% if lang == "cn" %}硕士研究生{% else %}M.Sc. Research{% endif %}</strong>
+    </div>
+    <div class="metric-box">
+      <span class="feature-kicker">{% if lang == "cn" %}维护方式{% else %}Authoring{% endif %}</span>
+      <strong>Markdown + LaTeX</strong>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">{% if lang == "cn" %}研究模块{% else %}Research Modules{% endif %}</p>
+      <h2>{% if lang == "cn" %}核心研究主题{% else %}Core research themes{% endif %}</h2>
+      <p class="section-intro">{% if lang == "cn" %}每个主题都对应一个独立页面，后续可以继续扩展为数据、论文、方法与实验记录。{% else %}Each theme opens into its own page, making it easy to expand later into methods, datasets, papers, and lab-facing notes.{% endif %}</p>
+    </div>
+    <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/research/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}">
+      {% if lang == "cn" %}查看全部研究{% else %}See all research{% endif %}
+    </a>
+  </div>
+  <div class="grid">
+    {% for entry in featured_research %}
+      {% include research_card.html lang=lang item=entry %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">{% if lang == "cn" %}论文模块{% else %}Publication Module{% endif %}</p>
+      <h2>{% if lang == "cn" %}代表性论文{% else %}Selected publications{% endif %}</h2>
+      <p class="section-intro">{% if lang == "cn" %}首页只展示代表性成果，完整列表与 DOI 入口集中在论文页面。{% else %}The homepage only surfaces representative outputs; the full list and DOI links live on the publications page.{% endif %}</p>
+    </div>
+    <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">
+      {% if lang == "cn" %}进入论文页面{% else %}Open publications{% endif %}
+    </a>
+  </div>
+  <div class="grid">
+    {% for pub in publications limit:3 %}
+      {% include publication_card.html lang=lang pub=pub %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include cv_section.html lang=lang %}
+
+<section class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">{% if lang == "cn" %}近期动态{% else %}Recent Updates{% endif %}</p>
+      <h2>{% if lang == "cn" %}最近进展{% else %}Recent movement{% endif %}</h2>
+      <p class="section-intro">{% if lang == "cn" %}保留轻量更新流，让网站保持生长感，但不影响学术主线。{% else %}A light update stream keeps the site alive without turning the homepage into a social feed.{% endif %}</p>
+    </div>
+  </div>
+  <div class="timeline">
+    {% for item in news limit:3 %}
+      <div class="timeline-item">
+        <div class="timeline-year">{{ item.date }}</div>
+        <div>
+          <h3>{% if lang == "cn" %}{{ item.title_cn }}{% else %}{{ item.title_en }}{% endif %}</h3>
+          <p>{% if lang == "cn" %}{{ item.detail_cn }}{% else %}{{ item.detail_en }}{% endif %}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">{% if lang == "cn" %}扩展入口{% else %}Expansion Paths{% endif %}</p>
+      <h2>{% if lang == "cn" %}后续模块{% else %}Future-facing modules{% endif %}</h2>
+      <p class="section-intro">{% if lang == "cn" %}第一版先把简历、研究与论文做好；实验室与博客保留入口，后续再按需要扩展。{% else %}V1 focuses on the academic core. Lab and blog already have routes, but remain intentionally lighter for now.{% endif %}</p>
+    </div>
+  </div>
+  <div class="grid grid-tight">
+    <a class="card card-link" href="{% if lang == 'cn' %}{{ '/cn/lab/' | relative_url }}{% else %}{{ '/lab/' | relative_url }}{% endif %}">
+      <h3>{% if lang == "cn" %}实验室{% else %}Lab{% endif %}</h3>
+      <p>{% if lang == "cn" %}为未来成员、方向、资源与招生信息预留结构。{% else %}Reserved for future members, directions, facilities, and opportunities.{% endif %}</p>
+      <span class="link-arrow">{% if lang == "cn" %}查看占位页面{% else %}Open placeholder{% endif %}</span>
+    </a>
+    <a class="card card-link" href="{% if lang == 'cn' %}{{ '/cn/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">
+      <h3>{% if lang == "cn" %}博客{% else %}Blog{% endif %}</h3>
+      <p>{% if lang == "cn" %}作为附加模块保留，用于日记、随笔与阶段性记录。{% else %}Kept as an optional writing layer for notes, diary-style posts, and short reflections.{% endif %}</p>
+      <span class="link-arrow">{% if lang == "cn" %}查看页面{% else %}Open page{% endif %}</span>
+    </a>
+  </div>
+</section>

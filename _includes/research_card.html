@@ -1,0 +1,11 @@
+{% assign lang = include.lang | default: "en" %}
+{% assign item = include.item %}
+<a class="card card-link research-card" href="{{ item.url | relative_url }}">
+  <div class="publication-meta">{% if lang == "cn" %}研究主题{% else %}Research Theme{% endif %}</div>
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.summary }}</p>
+  <div class="badges">
+    {% for tag in item.tags %}<span class="badge">{{ tag }}</span>{% endfor %}
+  </div>
+  <span class="link-arrow">{% if lang == "cn" %}查看详情{% else %}Open details{% endif %}</span>
+</a>
