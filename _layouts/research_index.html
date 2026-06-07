@@ -5,7 +5,7 @@ layout: default
 {% assign items = site.research | where: "lang", lang | sort: "order" %}
 <div class="page-shell">
   <section class="page-panel">
-    <div class="page-kicker">{% if lang == "cn" %}研究页面{% else %}Research Page{% endif %}</div>
+    <div class="page-kicker">{% if lang == "cn" %}研究{% else %}Research{% endif %}</div>
     <h1>{{ page.title }}</h1>
     <p class="page-intro muted">{{ page.description }}</p>
   </section>

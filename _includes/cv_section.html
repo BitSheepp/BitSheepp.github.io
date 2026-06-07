@@ -5,7 +5,7 @@
     <div>
       <p class="eyebrow">{% if lang == "cn" %}履历摘要{% else %}CV Snapshot{% endif %}</p>
       <h2>{% if lang == "cn" %}教育、项目与技能概览{% else %}Education, projects, and technical profile{% endif %}</h2>
-      <p class="section-intro">{% if lang == "cn" %}首页保持简洁，这里只展示关键履历信息；完整内容进入独立 CV 页面。{% else %}The homepage stays compact. This section only surfaces core academic qualifications before the full CV page takes over.{% endif %}</p>
+      <p class="section-intro">{% if lang == "cn" %}这里保留最关键的履历信息，完整版本放在独立简历页面。{% else %}Core qualifications are shown here, with the full academic resume on its own page.{% endif %}</p>
     </div>
     <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/cv/' | relative_url }}{% else %}{{ '/cv/' | relative_url }}{% endif %}">
       {% if lang == "cn" %}查看完整 CV{% else %}Open full CV{% endif %}

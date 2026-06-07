@@ -1,5 +1,5 @@
 title: Chunyang He
-description: Dual-language academic website of Chunyang He
+description: Academic website of Chunyang He
 url: https://bitsheepp.github.io
 baseurl: ""
 
@@ -31,14 +31,7 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
-  - scripts
-  - styles
-  - data
-  - pages
   - tools
-  - push_to_github.ps1
-  - script.js
-  - style.css
   - home-check.png
   - README.md
   - writer_space

@@ -5,24 +5,11 @@ layout: page
 lang: en
 nav_key: blog
 alt_url: /cn/blog/
-page_kicker: Writing
-description: "A light space for notes, diary-like entries, and short reflections."
+page_kicker: Blog
+description: "Short-form writing, research notes, and diary-style entries kept alongside the main academic pages."
 ---
 
-This page is kept intentionally simple in V2.
-
-It is a secondary writing space for:
-
-- research notes
-- short reflections
-- diary-style posts
-- material that does not belong on the main academic pages
-
-## Current status
-
-- public reading is open to everyone
-- comments use GitHub login through utterances
-- new posts should be written directly in `_posts/` with Markdown
+This page collects lighter writing that sits beside the main research and publication pages.
 
 ## Existing posts
 

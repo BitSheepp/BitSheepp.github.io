@@ -5,46 +5,15 @@ layout: default
 {% assign research_items = site.research | where: "lang", lang | sort: "order" %}
 {% assign featured_research = research_items | where: "featured", true %}
 {% assign publications = site.data.publications | sort: "year" | reverse %}
-{% assign news = site.data.news %}
 
 {% include hero_block.html lang=lang %}
-
-<section class="feature-panel">
-  <div>
-    <div class="feature-kicker">{% if lang == "cn" %}网站结构{% else %}Site Structure{% endif %}</div>
-    <h3>{% if lang == "cn" %}首页简洁，内容分层展开{% else %}A concise homepage with deeper pages{% endif %}</h3>
-    <p>
-      {% if lang == "cn" %}
-        首页保留最核心的信息，研究、论文与简历内容分别放在独立页面中。
-      {% else %}
-        The front page keeps only the essentials. Research, publications, and CV materials are organized into separate pages.
-      {% endif %}
-    </p>
-  </div>
-  <div class="feature-metrics">
-    <div class="metric-box">
-      <span class="feature-kicker">{% if lang == "cn" %}维护方式{% else %}Authoring{% endif %}</span>
-      <strong>Markdown + LaTeX</strong>
-    </div>
-    <div class="metric-box">
-      <span class="feature-kicker">{% if lang == "cn" %}整体风格{% else %}Tone{% endif %}</span>
-      <strong>{% if lang == "cn" %}轻量而清晰{% else %}Light and clear{% endif %}</strong>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="section-head">
     <div>
       <p class="eyebrow">{% if lang == "cn" %}研究主题{% else %}Research Themes{% endif %}</p>
       <h2>{% if lang == "cn" %}当前研究方向{% else %}Current research directions{% endif %}</h2>
-      <p class="section-intro">
-        {% if lang == "cn" %}
-          每个主题都对应独立页面，后续可以继续补充方法、数据与论文内容。
-        {% else %}
-          Each theme opens into its own page, making it easy to extend with methods, datasets, and publications.
-        {% endif %}
-      </p>
+      <p class="section-intro">{{ page.research_intro }}</p>
     </div>
     <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/research/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}">
       {% if lang == "cn" %}查看全部研究{% else %}See all research{% endif %}
@@ -62,13 +31,7 @@ layout: default
     <div>
       <p class="eyebrow">{% if lang == "cn" %}论文{% else %}Publications{% endif %}</p>
       <h2>{% if lang == "cn" %}代表性论文{% else %}Selected papers{% endif %}</h2>
-      <p class="section-intro">
-        {% if lang == "cn" %}
-          首页只展示代表性成果，完整列表与 DOI 信息放在论文页面中。
-        {% else %}
-          The homepage shows only representative work; the full list and DOI links are collected on the publications page.
-        {% endif %}
-      </p>
+      <p class="section-intro">{{ page.publications_intro }}</p>
     </div>
     <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">
       {% if lang == "cn" %}进入论文页面{% else %}Open publications{% endif %}
@@ -86,53 +49,34 @@ layout: default
 <section class="section">
   <div class="section-head">
     <div>
-      <p class="eyebrow">{% if lang == "cn" %}近况{% else %}Updates{% endif %}</p>
-      <h2>{% if lang == "cn" %}近期进展{% else %}Recent updates{% endif %}</h2>
-      <p class="section-intro">
-        {% if lang == "cn" %}
-          保留轻量更新，让网站保持活力，但不影响主线内容。
-        {% else %}
-          A small update stream keeps the site current without distracting from the main academic profile.
-        {% endif %}
-      </p>
+      <p class="eyebrow">{% if lang == "cn" %}动态{% else %}News{% endif %}</p>
+      <h2>{% if lang == "cn" %}近期动态{% else %}Latest news{% endif %}</h2>
+      <p class="section-intro">{{ page.news_intro }}</p>
     </div>
+    <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/news/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">
+      {% if lang == "cn" %}查看全部动态{% else %}Open news{% endif %}
+    </a>
   </div>
-  <div class="timeline">
-    {% for item in news limit:3 %}
-      <div class="timeline-item">
-        <div class="timeline-year">{{ item.date }}</div>
-        <div>
-          <h3>{% if lang == "cn" %}{{ item.title_cn }}{% else %}{{ item.title_en }}{% endif %}</h3>
-          <p>{% if lang == "cn" %}{{ item.detail_cn }}{% else %}{{ item.detail_en }}{% endif %}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+  {% include news_timeline.html lang=lang limit=3 %}
 </section>
 
 <section class="section">
   <div class="section-head">
     <div>
-      <p class="eyebrow">{% if lang == "cn" %}预留页面{% else %}Reserved Pages{% endif %}</p>
-      <h2>{% if lang == "cn" %}后续扩展{% else %}Future expansion{% endif %}</h2>
-      <p class="section-intro">
-        {% if lang == "cn" %}
-          实验室与博客先保留入口，后续按需要逐步扩展。
-        {% else %}
-          Lab and blog stay available as lighter pages and can be expanded later when needed.
-        {% endif %}
-      </p>
+      <p class="eyebrow">{% if lang == "cn" %}扩展页面{% else %}Secondary Pages{% endif %}</p>
+      <h2>{% if lang == "cn" %}补充内容入口{% else %}Additional destinations{% endif %}</h2>
+      <p class="section-intro">{{ page.secondary_intro }}</p>
     </div>
   </div>
   <div class="grid grid-tight">
     <a class="card card-link" href="{% if lang == 'cn' %}{{ '/cn/lab/' | relative_url }}{% else %}{{ '/lab/' | relative_url }}{% endif %}">
       <h3>{% if lang == "cn" %}实验室{% else %}Lab{% endif %}</h3>
-      <p>{% if lang == "cn" %}为未来成员、方向与资源展示预留结构。{% else %}Reserved for future members, directions, and shared resources.{% endif %}</p>
+      <p>{% if lang == "cn" %}集中展示研究愿景、方向规划、团队成员与共享资源。{% else %}A formal space for research vision, future team structure, and shared resources.{% endif %}</p>
       <span class="link-arrow">{% if lang == "cn" %}查看页面{% else %}Open page{% endif %}</span>
     </a>
     <a class="card card-link" href="{% if lang == 'cn' %}{{ '/cn/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">
       <h3>{% if lang == "cn" %}博客{% else %}Blog{% endif %}</h3>
-      <p>{% if lang == "cn" %}用于日记、随笔与阶段性记录。{% else %}A secondary space for notes, diary-style writing, and short reflections.{% endif %}</p>
+      <p>{% if lang == "cn" %}用于研究随笔、阶段性记录与较轻量的个人写作。{% else %}A lighter writing space for notes, diary-style entries, and short reflections.{% endif %}</p>
       <span class="link-arrow">{% if lang == "cn" %}查看页面{% else %}Open page{% endif %}</span>
     </a>
   </div>

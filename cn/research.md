@@ -5,5 +5,5 @@ layout: research_index
 lang: cn
 nav_key: research
 alt_url: /research/
-description: "以研究主题为核心组织的页面，每个方向都可以继续扩展为独立内容。"
+description: "按研究主题组织内容，并为每个方向提供可持续扩展的独立页面。"
 ---

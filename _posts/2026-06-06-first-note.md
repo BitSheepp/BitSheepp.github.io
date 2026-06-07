@@ -3,7 +3,7 @@ title: "First note on the new site"
 layout: post
 lang: en
 description: "A starting point for diary-style writing"
-excerpt: "A first lightweight post showing how the optional writing module can live beside the main academic profile."
+excerpt: "A first lightweight post showing how the blog can sit beside the main academic profile."
 tags: [diary, site]
 comments: true
 ---

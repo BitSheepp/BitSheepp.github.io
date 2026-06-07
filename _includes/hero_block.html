@@ -3,13 +3,13 @@
 <section class="hero">
   <div class="hero-main">
     <p class="eyebrow">{% if lang == "cn" %}学术主页{% else %}Academic Homepage{% endif %}</p>
-    <h1>{% if lang == "cn" %}{{ p.name_cn }}{% else %}{{ p.name }}{% endif %}</h1>
-    <div class="subtitle">{% if lang == "cn" %}{{ p.title_cn }}{% else %}{{ p.title_en }}{% endif %}</div>
+    <h1>{{ page.hero_title }}</h1>
+    <div class="subtitle">{{ page.hero_subtitle }}</div>
     <div class="meta">
-      {% if lang == "cn" %}{{ p.affiliation_cn }} | {{ p.location_cn }}{% else %}{{ p.affiliation_en }} | {{ p.location_en }}{% endif %}
-      | <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+      <strong>{% if lang == "cn" %}{{ p.name_cn }}{% else %}{{ p.name }}{% endif %}</strong>
+      <span>{% if lang == "cn" %}{{ p.affiliation_cn }} | {{ p.location_cn }}{% else %}{{ p.affiliation_en }} | {{ p.location_en }}{% endif %}</span>
     </div>
-    <p class="hero-copy">{% if lang == "cn" %}{{ p.hero_intro_cn }}{% else %}{{ p.hero_intro_en }}{% endif %}</p>
+    <p class="hero-copy">{{ page.hero_intro }}</p>
     <div class="badges">
       {% for badge in p.badges %}<span class="badge">{{ badge }}</span>{% endfor %}
     </div>
@@ -24,6 +24,24 @@
   </div>
 
   <aside class="hero-side">
+    <div class="hero-profile">
+      <div class="hero-profile-row">
+        <span>{% if lang == "cn" %}姓名{% else %}Name{% endif %}</span>
+        <strong>{% if lang == "cn" %}{{ p.name_cn }}{% else %}{{ p.name }}{% endif %}</strong>
+      </div>
+      <div class="hero-profile-row">
+        <span>{% if lang == "cn" %}方向{% else %}Field{% endif %}</span>
+        <strong>{% if lang == "cn" %}{{ p.title_cn }}{% else %}{{ p.title_en }}{% endif %}</strong>
+      </div>
+      <div class="hero-profile-row">
+        <span>{% if lang == "cn" %}单位{% else %}Affiliation{% endif %}</span>
+        <strong>{% if lang == "cn" %}{{ p.affiliation_cn }}{% else %}{{ p.affiliation_en }}{% endif %}</strong>
+      </div>
+      <div class="hero-profile-row">
+        <span>{% if lang == "cn" %}联系{% else %}Contact{% endif %}</span>
+        <strong><a href="mailto:{{ p.email }}">{{ p.email }}</a></strong>
+      </div>
+    </div>
     <div class="hero-stats">
       {% for item in p.featured_metrics %}
         <div class="stat-card">
@@ -31,10 +49,6 @@
           <div class="stat-value">{{ item.value }}</div>
         </div>
       {% endfor %}
-    </div>
-    <div class="hero-note">
-      <h3>{% if lang == "cn" %}简介{% else %}Overview{% endif %}</h3>
-      <p>{% if lang == "cn" %}{{ p.about_intro_cn }}{% else %}{{ p.about_intro_en }}{% endif %}</p>
     </div>
   </aside>
 </section>

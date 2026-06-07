@@ -5,5 +5,5 @@ layout: publication_index
 lang: en
 nav_key: publications
 alt_url: /cn/publications/
-description: "Selected papers and publication-facing metadata collected in one academic page."
+description: "A complete list of recent papers, venues, and publication details."
 ---

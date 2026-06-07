@@ -1,30 +1,40 @@
-# Personal CV Website
+# Chunyang He Academic Website
 
-This is a static CV website with data-driven content.
+This repository hosts the formal Jekyll site for a bilingual academic homepage on GitHub Pages.
 
-## Manual Update (Very Easy)
+## Maintenance model
 
-Edit only this file:
-- `data/profile.json`
+The site is maintained with:
 
-Then commit and push to `main`; GitHub Pages will auto-deploy.
+- Markdown for pages, research entries, and blog posts
+- YAML for short structured data
+- LaTeX inside Markdown through MathJax
+
+Long-form English and Chinese content should always live in separate files.
+
+## Main content sources
+
+- `index.md` and `cn/index.md`: homepage-specific copy
+- `_pages/` and `cn/`: English and Chinese standalone pages
+- `_research/`: bilingual research detail pages
+- `_posts/`: optional blog posts
+- `_data/profile.yml`: short identity facts, links, badges, metrics
+- `_data/publications.yml`: publication metadata
+- `_data/cv.yml`: education, experience, skills, awards
+- `_data/news.yml`: timeline entries for homepage and news page
 
 ## Local preview
 
-You can use any static server, e.g.:
+Use a Jekyll-compatible preview workflow when available, for example:
 
 ```bash
-python -m http.server 8000
+bundle exec jekyll serve
 ```
 
-Open `http://localhost:8000`.
+Then open `http://127.0.0.1:4000/`.
 
-## Deploy to GitHub Pages
+If Ruby is unavailable on the current machine, content can still be edited directly and published through GitHub Pages.
 
-1. Create a new GitHub repository, e.g. `chunyanghe-cv`.
-2. Push this folder content to the repository root.
-3. In GitHub repo settings: `Pages` -> Source: `GitHub Actions`.
-4. Push to `main`, wait for workflow `Deploy CV Site to GitHub Pages`.
+## Deployment
 
-Your site URL will be:
-- `https://<your-github-username>.github.io/<repo-name>/`
+The site deploys through GitHub Pages from the repository default branch and workflow configuration already included in `.github/workflows/pages.yml`.

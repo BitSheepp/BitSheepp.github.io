@@ -9,20 +9,6 @@ location_cn: "中国武汉"
 email: "cyhe@webmail.hzau.edu.cn"
 phone: "+86-176-3376-2997"
 
-hero_intro_en: >
-  I work on complex trait genetics, plant phenotyping, and reproducible computational
-  analysis in horticultural crops, with a focus on linking genomic data, transcriptomic
-  evidence, and practical phenotyping systems.
-hero_intro_cn: >
-  我的研究主要围绕园艺作物的复杂性状遗传学、植物表型分析以及可复现的计算流程展开，
-  重点关注如何将基因组数据、转录组证据与实际可用的表型分析系统连接起来。
-
-about_intro_en: >
-  The homepage stays brief, while fuller material is organized into research,
-  publications, and CV pages.
-about_intro_cn: >
-  首页保持简洁，完整内容分别进入研究、论文与简历页面。
-
 badges:
   - GWAS
   - Transcriptomics

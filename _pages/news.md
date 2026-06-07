@@ -3,15 +3,12 @@ title: News
 permalink: /news/
 layout: page
 lang: en
-nav_key: about
-alt_url: /cn/
-page_kicker: Update Stream
-description: "Short update entries collected from the same structured data used on the homepage."
+nav_key: news
+alt_url: /cn/news/
+page_kicker: News
+description: "A running timeline of recent papers, research milestones, and site updates."
 ---
 
-{% for item in site.data.news %}
-### {{ item.date }} · {{ item.title_en }}
+This page collects short public updates that do not need a full article or separate project page.
 
-{{ item.detail_en }}
-
-{% endfor %}
+{% include news_timeline.html lang="en" %}

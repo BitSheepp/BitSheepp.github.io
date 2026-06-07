@@ -1,0 +1,26 @@
+{% assign lang = include.lang | default: "en" %}
+{% assign items = site.data.news %}
+{% assign limit = include.limit %}
+<div class="timeline">
+  {% if limit %}
+    {% for item in items limit:limit %}
+      <article class="timeline-item">
+        <div class="timeline-year">{{ item.date }}</div>
+        <div>
+          <h3>{% if lang == "cn" %}{{ item.title_cn }}{% else %}{{ item.title_en }}{% endif %}</h3>
+          <p>{% if lang == "cn" %}{{ item.detail_cn }}{% else %}{{ item.detail_en }}{% endif %}</p>
+        </div>
+      </article>
+    {% endfor %}
+  {% else %}
+    {% for item in items %}
+      <article class="timeline-item">
+        <div class="timeline-year">{{ item.date }}</div>
+        <div>
+          <h3>{% if lang == "cn" %}{{ item.title_cn }}{% else %}{{ item.title_en }}{% endif %}</h3>
+          <p>{% if lang == "cn" %}{{ item.detail_cn }}{% else %}{{ item.detail_en }}{% endif %}</p>
+        </div>
+      </article>
+    {% endfor %}
+  {% endif %}
+</div>
