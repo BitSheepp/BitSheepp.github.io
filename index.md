@@ -6,11 +6,11 @@ nav_key: about
 permalink: /
 alt_url: /cn/
 description: "Academic homepage of Chunyang He."
-hero_title: "Bioinformatics for quantitative traits, crop phenotypes, and reproducible analysis"
-hero_subtitle: "Research in horticultural crop genetics, plant phenotyping, and computational workflows."
-hero_intro: "My work connects genomic evidence, transcriptomic analysis, and phenotype-oriented pipelines so quantitative questions in horticultural crops can be studied with clearer data and more reusable methods."
-research_intro: "Three research themes organize the current work and lead into fuller detail pages."
-publications_intro: "Selected papers highlight recent output; the full list is collected on the publications page."
+hero_title: "Bioinformatics for citrus biology, complex traits, and reproducible analysis"
+hero_subtitle: "I study industry-relevant biological questions in citrus through genomics, transcriptomics, and phenotyping."
+hero_intro: "My current work centers on citrus disease resistance, fruit quality biology, and phenotype-oriented analysis systems. Across these topics, I use bioinformatics to connect molecular evidence, quantitative interpretation, and reusable research workflows."
+research_intro: "The research page is organized around one biological core and two supporting capability lines."
+publications_intro: "Selected papers are ordered to highlight citrus biology questions first, followed by one platform-oriented study."
 news_intro: "Recent milestones, papers, and site updates are collected in a lightweight public timeline."
-secondary_intro: "Lab and blog extend the site without competing with the main academic profile."
+secondary_intro: "Lab remains a future public-facing page, while the blog stays as a quiet archive for lighter notes."
 ---

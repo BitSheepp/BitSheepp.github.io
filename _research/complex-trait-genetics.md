@@ -1,8 +1,8 @@
 ---
-title: "Complex Trait Genetics in Horticultural Crops"
+title: "Citrus Biology and Complex Trait Genetics"
 lang: en
 slug: "complex-trait-genetics"
-summary: "Integrating GWAS, transcriptomics, and functional interpretation to explain disease resistance, fruit quality, and developmental traits."
+summary: "Using genomic and transcriptomic evidence to study citrus disease resistance, fruit quality, and related biological traits."
 order: 1
 tags: [GWAS, Transcriptomics, Candidate genes]
 featured: true
@@ -10,27 +10,40 @@ permalink: /research/complex-trait-genetics/
 nav_key: research
 alt_url: /cn/research/complex-trait-genetics/
 page_kicker: Research Theme
-description: "A research direction centered on complex trait dissection in horticultural crops."
+description: "A citrus-centered research line focused on disease resistance, fruit quality, and biological interpretation."
 ---
 
-This direction focuses on connecting **population-scale genotype data**, transcriptomic signals, and biological interpretation so that complex horticultural traits can be studied with stronger evidence and cleaner workflows.
+This line is the biological center of the site. It uses population-scale genotype data, transcriptomic signals, and functional interpretation to study citrus questions that matter both scientifically and agriculturally.
 
-## Current emphasis
+## Research question
 
-- disease resistance in perennial fruit crops
-- fruit quality and metabolite-associated traits
+How can genomic and transcriptomic evidence be used to explain citrus disease resistance, fruit quality variation, and the biological traits that matter in breeding and production?
+
+## Current focus
+
+- citrus canker resistance and related defense biology
+- fruit quality and metabolite-associated traits in perennial fruit crops
 - candidate locus prioritization after GWAS and expression analysis
 
-## Working model
+## Methods path
 
-Many traits can be represented as:
+The typical workflow connects:
+
+1. population-scale genotypes
+2. association analysis and transcriptomic evidence
+3. candidate gene prioritization
+4. biological interpretation for downstream validation
+
+Many quantitative traits can be represented as:
 
 $$
 y = X\beta + Zu + \varepsilon
 $$
 
-where fixed effects, background genetic effects, and residual variation are all considered together during quantitative analysis.
+where fixed effects, background genetic effects, and residual variation are considered together during analysis.
 
-## Why it matters
+## Representative work
 
-This line of work supports crop genetics, breeding decisions, and the biological interpretation needed to move from association signals toward usable hypotheses.
+- COMT-mediated resistance to citrus canker
+- fruit quality and metabolite-associated trait studies
+- supporting candidate-gene interpretation after GWAS and expression analysis

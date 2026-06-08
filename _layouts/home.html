@@ -4,7 +4,7 @@ layout: default
 {% assign lang = page.lang | default: "en" %}
 {% assign research_items = site.research | where: "lang", lang | sort: "order" %}
 {% assign featured_research = research_items | where: "featured", true %}
-{% assign publications = site.data.publications | sort: "year" | reverse %}
+{% assign publications = site.data.publications | sort: "priority" %}
 
 {% include hero_block.html lang=lang %}
 
@@ -12,7 +12,7 @@ layout: default
   <div class="section-head">
     <div>
       <p class="eyebrow">{% if lang == "cn" %}研究主题{% else %}Research Themes{% endif %}</p>
-      <h2>{% if lang == "cn" %}当前研究方向{% else %}Current research directions{% endif %}</h2>
+      <h2>{% if lang == "cn" %}核心研究主线{% else %}Core research lines{% endif %}</h2>
       <p class="section-intro">{{ page.research_intro }}</p>
     </div>
     <a class="button-secondary compact-button" href="{% if lang == 'cn' %}{{ '/cn/research/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}">
@@ -76,7 +76,7 @@ layout: default
     </a>
     <a class="card card-link" href="{% if lang == 'cn' %}{{ '/cn/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">
       <h3>{% if lang == "cn" %}博客{% else %}Blog{% endif %}</h3>
-      <p>{% if lang == "cn" %}用于研究随笔、阶段性记录与较轻量的个人写作。{% else %}A lighter writing space for notes, diary-style entries, and short reflections.{% endif %}</p>
+      <p>{% if lang == "cn" %}保留为较低权重的研究日志，用于实验记录、阶段总结与零散想法。{% else %}A lower-weight research log for experiment notes, short summaries, and fragments not meant for the main pages.{% endif %}</p>
       <span class="link-arrow">{% if lang == "cn" %}查看页面{% else %}Open page{% endif %}</span>
     </a>
   </div>

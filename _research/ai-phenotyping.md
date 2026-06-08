@@ -1,27 +1,31 @@
 ---
-title: "AI-Assisted Phenotyping and Biological Image Analysis"
+title: "Phenotyping Platforms and Biological Image Analysis"
 lang: en
 slug: "ai-phenotyping"
-summary: "Building end-to-end phenotyping systems that connect image acquisition, model inference, and trait extraction."
-order: 2
+summary: "Building phenotype-oriented systems for citrus morphology and other transferable biological imaging problems."
+order: 3
 tags: [PyTorch, YOLO, 3D reconstruction]
 featured: true
 permalink: /research/ai-phenotyping/
 nav_key: research
 alt_url: /cn/research/ai-phenotyping/
 page_kicker: Research Theme
-description: "Computer vision and phenotyping pipelines for biological structure and crop morphology."
+description: "A supporting line focused on phenotype-oriented systems, especially for citrus morphology and reusable imaging workflows."
 ---
 
-This work explores how AI can improve phenotype capture in practical research settings, especially when the goal is not just prediction accuracy but a workflow that can actually be reused by other researchers.
+This line supports the main biological questions by improving how phenotypes are captured. The emphasis is not only model performance, but whether image-based analysis can become a usable system for citrus research and related biological structures.
 
-## Main scenarios
+## Research question
 
-- root system characterization
+How can imaging, detection, and trait extraction be organized into practical systems that support citrus biology and other transferable plant phenotyping problems?
+
+## Current focus
+
 - citrus fruit morphology and trait extraction
-- visual analysis of plant structures under field or device-based acquisition
+- device-based phenotyping workflows for fruit structure
+- supporting visual analysis problems such as root-system characterization
 
-## Design principle
+## Methods path
 
 The goal is to connect:
 
@@ -30,3 +34,9 @@ The goal is to connect:
 3. biologically meaningful trait output
 
 That full chain is what makes the work useful beyond a single benchmark.
+
+## Representative work
+
+- PhenoCitrus as a citrus fruit phenotyping platform
+- phenotype extraction pipelines for morphology-related traits
+- supporting image-analysis experience that can transfer across crop systems

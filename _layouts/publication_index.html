@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign lang = page.lang | default: "en" %}
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign pubs = site.data.publications | sort: "priority" %}
 <div class="page-shell">
   <section class="page-panel">
     <div class="page-kicker">{% if lang == "cn" %}论文{% else %}Publications{% endif %}</div>

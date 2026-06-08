@@ -1,21 +1,21 @@
 name: "Chunyang He"
 name_cn: "何春阳"
-title_en: "Bioinformatics, Quantitative Genetics, and Plant Phenotyping"
-title_cn: "生物信息学、数量遗传学与植物表型分析"
+title_en: "Bioinformatics for Citrus Biology, Complex Traits, and Phenotyping"
+title_cn: "面向柑橘生物学、复杂性状与表型分析的生物信息学研究"
 affiliation_en: "Huazhong Agricultural University"
 affiliation_cn: "华中农业大学"
 location_en: "Wuhan, China"
 location_cn: "中国武汉"
 email: "cyhe@webmail.hzau.edu.cn"
 phone: "+86-176-3376-2997"
+photo: "/assets/images/profile.jpg"
 
 badges:
+  - Citrus biology
   - GWAS
   - Transcriptomics
   - Phenotyping
-  - Python
-  - LaTeX
-  - Workflows
+  - Reproducible workflows
 
 social_links:
   - label: "GitHub"
@@ -35,24 +35,24 @@ featured_metrics:
     label_cn: "当前阶段"
 
 research_themes:
-  - title_en: "Complex Trait Genetics in Horticultural Crops"
-    title_cn: "园艺作物复杂性状遗传学"
-    summary_en: "Using GWAS, transcriptomics, and comparative genomics to study disease resistance, fruit quality, and developmental traits."
-    summary_cn: "结合 GWAS、转录组学与比较基因组学，研究病害抗性、果实品质与发育性状。"
+  - title_en: "Citrus Biology and Complex Trait Genetics"
+    title_cn: "柑橘生物学与复杂性状遗传学"
+    summary_en: "Using genomic and transcriptomic evidence to study citrus disease resistance, fruit quality, and related biological traits."
+    summary_cn: "结合基因组与转录组证据，研究柑橘病害抗性、果实品质及相关生物学性状。"
     tags: [GWAS, Transcriptomics, Candidate genes]
     url_en: "/research/complex-trait-genetics/"
     url_cn: "/cn/research/complex-trait-genetics/"
-  - title_en: "Plant Phenotyping and Biological Image Analysis"
-    title_cn: "植物表型分析与生物图像计算"
-    summary_en: "Building practical pipelines for root systems, citrus fruit morphology, and other visual plant traits."
-    summary_cn: "围绕根系、柑橘果实形态等视觉性状，构建可实际使用的表型分析流程。"
-    tags: [Phenotyping, Imaging, 3D reconstruction]
-    url_en: "/research/ai-phenotyping/"
-    url_cn: "/cn/research/ai-phenotyping/"
   - title_en: "Reproducible Bioinformatics Infrastructure"
-    title_cn: "可复现的生物信息学分析基础"
-    summary_en: "Designing cleaner workflows and data structures for genomic analysis, reuse, and collaboration."
-    summary_cn: "为基因组分析、结果复用与协作交接设计更清晰的流程与数据结构。"
+    title_cn: "可复现的柑橘研究计算流程"
+    summary_en: "Designing analysis systems that make citrus genomics and trait studies easier to verify, extend, and hand off."
+    summary_cn: "围绕柑橘基因组与性状研究，设计更易验证、扩展与交接的分析流程。"
     tags: [Python, Workflow design, Data integration]
     url_en: "/research/reproducible-pipelines/"
     url_cn: "/cn/research/reproducible-pipelines/"
+  - title_en: "Phenotyping Platforms and Biological Image Analysis"
+    title_cn: "表型平台与生物图像分析"
+    summary_en: "Building phenotype-oriented systems for citrus morphology and other transferable biological imaging problems."
+    summary_cn: "构建面向柑橘形态分析及其他可迁移生物图像问题的表型系统。"
+    tags: [Phenotyping, Imaging, 3D reconstruction]
+    url_en: "/research/ai-phenotyping/"
+    url_cn: "/cn/research/ai-phenotyping/"

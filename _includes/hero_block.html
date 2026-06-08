@@ -24,6 +24,9 @@
   </div>
 
   <aside class="hero-side">
+    <div class="hero-portrait">
+      <img src="{{ p.photo | relative_url }}" alt="{% if lang == 'cn' %}{{ p.name_cn }}{% else %}{{ p.name }}{% endif %}">
+    </div>
     <div class="hero-profile">
       <div class="hero-profile-row">
         <span>{% if lang == "cn" %}姓名{% else %}Name{% endif %}</span>
@@ -40,6 +43,10 @@
       <div class="hero-profile-row">
         <span>{% if lang == "cn" %}联系{% else %}Contact{% endif %}</span>
         <strong><a href="mailto:{{ p.email }}">{{ p.email }}</a></strong>
+      </div>
+      <div class="hero-profile-row">
+        <span>{% if lang == "cn" %}主页主题{% else %}Focus{% endif %}</span>
+        <strong>{% if lang == "cn" %}柑橘生物学问题驱动的生物信息学研究{% else %}Bioinformatics for citrus biology questions{% endif %}</strong>
       </div>
     </div>
     <div class="hero-stats">
